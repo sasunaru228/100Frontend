@@ -1,0 +1,54 @@
+.box {
+  border: 3px solid #C4C4C4;
+  border-radius: 8px;
+  margin-left: 15px;
+}
+.box form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.box form select {
+  margin: 2px 0 2px 2px;
+  border: none;
+  border-radius: 4px;
+  background: url("www.svg") no-repeat;
+  background-position: right 8px center;
+  background-color: #C4C4C4;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px 25px 10px 8px;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  width: 89px;
+}
+.box input {
+  border: none;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 0;
+  letter-spacing: -0.015em;
+  color: #000000;
+  margin-left: 11px;
+  outline: none;
+  width: 450px;
+}
+.box button {
+  background: #C4C4C4;
+  border-radius: 0 4px 4px 0;
+  margin-right: 2px;
+  border: none;
+  cursor: pointer;
+  height: 36px;
+  width: 74px;
+}
+
+/*# sourceMappingURL=SearchBox.module.css.map */

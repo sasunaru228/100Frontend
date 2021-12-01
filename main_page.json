@@ -1,0 +1,912 @@
+{
+  "categories":[
+    {
+      "id":1,
+      "name":"Molestias odio aut.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":2,
+      "name":"Dolor iste quisquam.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":3,
+      "name":"Ratione tempore aut.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":4,
+      "name":"Consequatur soluta.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":5,
+      "name":"Voluptas perferendis.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":6,
+      "name":"Corrupti accusamus.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":16,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":7,
+      "name":"Error eius fugit.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":8,
+      "name":"Voluptatem nihil.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":9,
+      "name":"Alias omnis odit.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":10,
+      "name":"Sint nemo expedita.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":11,
+      "name":"Eum deserunt et.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":12,
+      "name":"Quasi dignissimos.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":3,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":13,
+      "name":"Aspernatur itaque.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":2,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":14,
+      "name":"Consectetur impedit.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":15,
+      "name":"Dolore reiciendis quisquam.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":29,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":16,
+      "name":"Et recusandae.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":17,
+      "name":"Iste quia.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":18,
+      "name":"Sit a.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":19,
+      "name":"Perspiciatis dignissimos.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":20,
+      "name":"Exercitationem qui quia.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":21,
+      "name":"Animi nam.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":22,
+      "name":"Ipsam a consequatur.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":23,
+      "name":"Doloribus dolor possimus.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":24,
+      "name":"Sed explicabo.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":25,
+      "name":"Nobis alias aut.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":26,
+      "name":"Aliquid et provident.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":27,
+      "name":"Repellendus ratione.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":28,
+      "name":"Dolore harum.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":29,
+      "name":"Qui et.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":30,
+      "name":"Assumenda ad molestiae.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    }
+  ],
+  "main_banners":[
+    "https:\/\/picsum.photos\/1440\/305",
+    "https:\/\/picsum.photos\/1440\/305",
+    "https:\/\/picsum.photos\/1440\/305"
+  ],
+  "popular_categories":[
+    {
+      "id":3,
+      "name":"Ratione tempore aut.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":4,
+      "name":"Consequatur soluta.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":5,
+      "name":"Voluptas perferendis.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":6,
+      "name":"Corrupti accusamus.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":16,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":7,
+      "name":"Error eius fugit.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":9,
+      "name":"Alias omnis odit.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":10,
+      "name":"Sint nemo expedita.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":11,
+      "name":"Eum deserunt et.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":12,
+      "name":"Quasi dignissimos.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":3,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":13,
+      "name":"Aspernatur itaque.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":2,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":14,
+      "name":"Consectetur impedit.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":16,
+      "name":"Et recusandae.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":17,
+      "name":"Iste quia.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":18,
+      "name":"Sit a.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":19,
+      "name":"Perspiciatis dignissimos.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    },
+    {
+      "id":24,
+      "name":"Sed explicabo.",
+      "created_at":"2021-11-02T17:04:14.000000Z",
+      "updated_at":"2021-11-02T17:04:14.000000Z",
+      "parent_id":null,
+      "img":"https:\/\/picsum.photos\/179\/142"
+    }
+  ],
+  "buy_now":{
+    "products":[
+      {
+        "product_id":7,
+        "category":"Qui et.",
+        "category_id":29,
+        "short_name":"Unde aliquam nam.",
+        "full_name":"Qui corrupti rem quis nesciunt dolor expedita.",
+        "short_description":"Ratione qui odio magni blanditiis. Error repudiandae harum sint rerum error aut quam.",
+        "full_description":"Nihil a quo delectus recusandae nesciunt. Eius dolores quia architecto exercitationem qui. Sit nobis laborum adipisci temporibus earum.",
+        "active":false,
+        "created_at":"2021-11-02 17:04:16",
+        "updated_at":"2021-11-02 17:04:16",
+        "manufacturer":"Schuppe, White and Willms",
+        "manufacturer_id":3,
+        "external_id":4608,
+        "img":"https:\/\/picsum.photos\/179\/142",
+        "prices":{
+          "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"74009.32",
+          "\u0421\u043a\u0438\u0434\u043a\u0430":"22287.72"
+        },
+        "params":{
+          "facere":null,
+          "perferendis":"Earum aliquid.",
+          "deleniti":"Harum neque tempore.",
+          "aut":"Sunt dignissimos assumenda.",
+          "ex":"A doloribus."
+        }
+      },
+      {
+        "product_id":8,
+        "category":"Voluptas perferendis.",
+        "category_id":5,
+        "short_name":"Doloremque possimus sit velit ratione.",
+        "full_name":"Corporis mollitia sapiente aspernatur.",
+        "short_description":"Tempora ex nulla provident. Sunt consequatur quas incidunt magnam. Non praesentium voluptas eveniet enim dolor nam. Ea quis delectus aliquid sint blanditiis labore magni.",
+        "full_description":"Facilis est quis ut ut et omnis est id. Qui fuga non laboriosam magnam temporibus maiores. Officiis nobis nobis corporis.",
+        "active":false,
+        "created_at":"2021-11-02 17:04:16",
+        "updated_at":"2021-11-02 17:04:16",
+        "manufacturer":"Simonis, King and Kautzer",
+        "manufacturer_id":5,
+        "external_id":5261,
+        "img":"https:\/\/picsum.photos\/179\/142",
+        "prices":{
+          "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"780929.87",
+          "\u0421\u043a\u0438\u0434\u043a\u0430":"115263.92"
+        },
+        "params":{
+          "perferendis":null,
+          "repellendus":null,
+          "tempora":null,
+          "ex":null,
+          "aut":"Et accusantium.",
+          "facere":"Dolores quo.",
+          "quo":"Ab ipsa vel.",
+          "temporibus":"Non animi quia."
+        }
+      },
+      {
+        "product_id":9,
+        "category":"Aspernatur itaque.",
+        "category_id":13,
+        "short_name":"Nobis maxime doloribus incidunt modi.",
+        "full_name":"A rerum minus doloremque pariatur illo unde.",
+        "short_description":"Quia in recusandae ea velit sit. Blanditiis modi tempore impedit autem autem doloremque. Enim illo quo aut maiores illo. Reprehenderit ea incidunt quos molestiae omnis facere est.",
+        "full_description":"Ut incidunt possimus tempora sequi harum et. Illo quia modi consequatur. In laudantium in sapiente earum.",
+        "active":true,
+        "created_at":"2021-11-02 17:04:16",
+        "updated_at":"2021-11-02 17:04:16",
+        "manufacturer":"Simonis, King and Kautzer",
+        "manufacturer_id":5,
+        "external_id":7782,
+        "img":"https:\/\/picsum.photos\/179\/142",
+        "prices":{
+          "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"352283.06",
+          "\u0421\u043a\u0438\u0434\u043a\u0430":"41565.52"
+        },
+        "params":{
+          "deleniti":null,
+          "quo":null,
+          "repellendus":null,
+          "temporibus":"Quae aut non.",
+          "perferendis":"Ab ullam.",
+          "tempora":null
+        }
+      },
+      {
+        "product_id":10,
+        "category":"Iste quia.",
+        "category_id":17,
+        "short_name":"Omnis aut assumenda et at.",
+        "full_name":"Ex dolores facilis nemo corporis quos.",
+        "short_description":"Perferendis asperiores optio ut sunt aut ex ab quia. Aut quidem fuga nulla ut. Deserunt quos et expedita quod ducimus tempore optio.",
+        "full_description":"Cupiditate harum in unde minima fugiat ipsam et facilis. Dolorum a quo illo velit qui nam impedit. Totam consequatur debitis excepturi esse. Dicta odio a architecto.",
+        "active":false,
+        "created_at":"2021-11-02 17:04:16",
+        "updated_at":"2021-11-02 17:04:16",
+        "manufacturer":"Schuppe, White and Willms",
+        "manufacturer_id":3,
+        "external_id":2528,
+        "img":"https:\/\/picsum.photos\/179\/142",
+        "prices":{
+          "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"843355.60",
+          "\u0421\u043a\u0438\u0434\u043a\u0430":"149356.01"
+        },
+        "params":{
+          "repellendus":"Nulla in.",
+          "temporibus":"Facere aut sint.",
+          "aut":null,
+          "ex":null
+        }
+      },
+      {
+        "product_id":11,
+        "category":"Alias omnis odit.",
+        "category_id":9,
+        "short_name":"Vero temporibus non.",
+        "full_name":"Necessitatibus et corrupti vero unde.",
+        "short_description":"Dolores dolorem aperiam incidunt nihil distinctio accusamus. Explicabo qui molestiae et dolorum sit eius. Doloribus repellat eaque vel natus. Laboriosam ut ut nulla numquam hic est omnis cumque.",
+        "full_description":"Est qui quia veniam reiciendis. Assumenda sint accusamus non accusamus. Illo qui ut aperiam eum dolore.",
+        "active":false,
+        "created_at":"2021-11-02 17:04:16",
+        "updated_at":"2021-11-02 17:04:16",
+        "manufacturer":"Simonis, King and Kautzer",
+        "manufacturer_id":5,
+        "external_id":1242,
+        "img":"https:\/\/picsum.photos\/179\/142",
+        "prices":{
+          "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"500830.81",
+          "\u0421\u043a\u0438\u0434\u043a\u0430":"222689.05"
+        },
+        "params":{
+          "quo":"Eos consequatur.",
+          "tempora":null,
+          "repellendus":null,
+          "temporibus":null,
+          "asperiores":"Tempora deserunt vel.",
+          "aut":"Adipisci facilis."
+        }
+      },
+      {
+        "product_id":12,
+        "category":"Consectetur impedit.",
+        "category_id":14,
+        "short_name":"Consequatur quos vero dolorem.",
+        "full_name":"Aliquid aut sed nobis sed magnam.",
+        "short_description":"Assumenda qui ducimus iste est qui aut sed. Nemo vel saepe sit possimus asperiores est. Repudiandae voluptatem qui sint aut vero architecto aperiam quod.",
+        "full_description":"Quibusdam velit dolores in iure aliquam. Doloribus nam et tempore vel. Quam laudantium minima nobis est voluptas et tempora. Et aperiam porro ea velit et culpa debitis sed.",
+        "active":false,
+        "created_at":"2021-11-02 17:04:16",
+        "updated_at":"2021-11-02 17:04:16",
+        "manufacturer":"Bradtke Ltd",
+        "manufacturer_id":6,
+        "external_id":927,
+        "img":"https:\/\/picsum.photos\/179\/142",
+        "prices":{
+          "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"177733.86",
+          "\u0421\u043a\u0438\u0434\u043a\u0430":"201480.61"
+        },
+        "params":{
+          "perferendis":null,
+          "deleniti":null,
+          "repellendus":"Tempore eius.",
+          "ex":"Quasi ut placeat."
+        }
+      },
+      {
+        "product_id":13,
+        "category":"Aliquid et provident.",
+        "category_id":26,
+        "short_name":"Voluptates quo provident.",
+        "full_name":"Et voluptate accusantium ducimus sunt qui ut.",
+        "short_description":"Aliquam quia velit dignissimos similique tempora voluptatem est. Labore quos porro ut facere odio itaque. Fugiat rerum atque aut maxime eaque.",
+        "full_description":"Sit dolorem repellat commodi mollitia unde eligendi. Error praesentium tenetur dicta eos. Quis corrupti nihil aut nobis qui rerum repellat voluptas.",
+        "active":true,
+        "created_at":"2021-11-02 17:04:16",
+        "updated_at":"2021-11-02 17:04:16",
+        "manufacturer":"Simonis, King and Kautzer",
+        "manufacturer_id":5,
+        "external_id":3008,
+        "img":"https:\/\/picsum.photos\/179\/142",
+        "prices":{
+          "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"328787.16",
+          "\u0421\u043a\u0438\u0434\u043a\u0430":"76904.03"
+        },
+        "params":{
+          "asperiores":null,
+          "aut":null
+        }
+      },
+      {
+        "product_id":14,
+        "category":"Assumenda ad molestiae.",
+        "category_id":30,
+        "short_name":"Sint corrupti cupiditate fuga asperiores.",
+        "full_name":"Consequatur ipsam facilis sit rerum veniam.",
+        "short_description":"Inventore repellat quia voluptatem molestiae voluptatem sapiente. Nihil quis distinctio omnis voluptate ea. Porro eum in ratione eveniet.",
+        "full_description":"Fugit error eum sit iure. Quae illum delectus mollitia animi eum. Rem quia voluptatem necessitatibus repellendus unde enim saepe. Aliquam dolor quasi et necessitatibus tempore in.",
+        "active":false,
+        "created_at":"2021-11-02 17:04:16",
+        "updated_at":"2021-11-02 17:04:16",
+        "manufacturer":"Williamson-Glover",
+        "manufacturer_id":1,
+        "external_id":7677,
+        "img":"https:\/\/picsum.photos\/179\/142",
+        "prices":{
+          "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"267960.59",
+          "\u0421\u043a\u0438\u0434\u043a\u0430":"95698.62"
+        },
+        "params":{
+          "facere":"Et doloremque reprehenderit.",
+          "perferendis":null,
+          "deleniti":"Nemo nam.",
+          "temporibus":null,
+          "asperiores":"Et accusamus et.",
+          "aut":null,
+          "ex":"Est voluptatem ut."
+        }
+      }
+    ],
+    "banners":[
+      "https:\/\/picsum.photos\/717\/287",
+      "https:\/\/picsum.photos\/717\/287"
+    ]
+  },
+  "articles":{
+    "big":{
+      "id":1,
+      "img":"https:\/\/picsum.photos\/685\/461",
+      "header":"Labore consequatur eum libero.",
+      "short_text":"Voluptatem assumenda reprehenderit minus sit maiores a. Sequi explicabo dolorum facere velit error ea aut. Nostrum est debitis ut mollitia.",
+      "long_text":"Quis ut est error exercitationem aut. Adipisci expedita ducimus et excepturi. Necessitatibus minus sint eius quo temporibus. Quod illum exercitationem laborum expedita quidem vel accusantium. Voluptatem error aspernatur autem dolore delectus aut.",
+      "created_at":"2021-11-02T17:04:29.000000Z",
+      "updated_at":"2021-11-02T17:04:29.000000Z"
+    },
+    "small":[
+      {
+        "id":25,
+        "img":"https:\/\/picsum.photos\/685\/461",
+        "header":"Dolorem nisi dicta iusto ut.",
+        "short_text":"Aut dolores eum distinctio dolorem recusandae. Ipsa odio voluptatem magnam autem voluptatem necessitatibus et. Quo error et mollitia.",
+        "long_text":"Est beatae culpa ea quas. Est natus eaque ut mollitia facere sed non. Asperiores autem tempora consequuntur voluptas quidem et fugiat. Expedita fugiat sequi exercitationem earum sed velit. Quas nihil dolore provident sit.",
+        "created_at":"2021-11-02T17:04:29.000000Z",
+        "updated_at":"2021-11-02T17:04:29.000000Z"
+      },
+      {
+        "id":27,
+        "img":"https:\/\/picsum.photos\/685\/461",
+        "header":"Voluptatem consectetur et quasi beatae.",
+        "short_text":"Placeat et atque quo suscipit quia rem tempora eligendi. At voluptates consequuntur possimus et dicta cum voluptas.",
+        "long_text":"Ducimus recusandae eum nulla quidem. Exercitationem rerum incidunt et tenetur ut non aperiam aut. Non itaque eos et omnis adipisci corrupti architecto. Tenetur deleniti perspiciatis cupiditate cupiditate.",
+        "created_at":"2021-11-02T17:04:29.000000Z",
+        "updated_at":"2021-11-02T17:04:29.000000Z"
+      }
+    ]
+  },
+  "recommends":[
+    {
+      "product_id":15,
+      "category":"Animi nam.",
+      "category_id":21,
+      "short_name":"Aut earum at.",
+      "full_name":"Ratione quae temporibus numquam.",
+      "short_description":"Culpa animi nobis libero aut. Adipisci in nulla odio.",
+      "full_description":"Pariatur quae quia et sit repudiandae officiis. Ea esse doloribus error impedit accusantium cum. Et esse non harum nam id voluptas.",
+      "active":false,
+      "created_at":"2021-11-02 17:04:16",
+      "updated_at":"2021-11-02 17:04:16",
+      "manufacturer":"Beatty-Tremblay",
+      "manufacturer_id":2,
+      "external_id":5333,
+      "img":"https:\/\/picsum.photos\/179\/142",
+      "prices":{
+        "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"381689.91",
+        "\u0421\u043a\u0438\u0434\u043a\u0430":"221065.50"
+      },
+      "params":{
+        "perferendis":null,
+        "temporibus":null,
+        "ex":"Maxime veniam ut."
+      }
+    },
+    {
+      "product_id":16,
+      "category":"Assumenda ad molestiae.",
+      "category_id":30,
+      "short_name":"Quo minima alias et dolorem quo.",
+      "full_name":"Officiis iure et harum non quod.",
+      "short_description":"Quia omnis ea voluptatum nulla delectus repudiandae quaerat odio. Odit et dolorem nemo quaerat officiis alias excepturi eveniet. Maxime laborum quas ab reiciendis sint error aperiam.",
+      "full_description":"Rerum ipsam et enim atque suscipit praesentium dolores. Itaque et dolore et facere ut minus doloremque id. Dolores quia nisi et tempore. Ea in quo qui repellat qui aspernatur eum.",
+      "active":true,
+      "created_at":"2021-11-02 17:04:16",
+      "updated_at":"2021-11-02 17:04:16",
+      "manufacturer":"Douglas Ltd",
+      "manufacturer_id":7,
+      "external_id":6705,
+      "img":"https:\/\/picsum.photos\/179\/142",
+      "prices":{
+        "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"711146.01",
+        "\u0421\u043a\u0438\u0434\u043a\u0430":"15499.80"
+      },
+      "params":{
+        "facere":"Velit doloribus libero.",
+        "perferendis":"Quia reprehenderit sint.",
+        "deleniti":null,
+        "temporibus":null,
+        "asperiores":null,
+        "aut":"Sit sunt voluptatem.",
+        "ex":null
+      }
+    },
+    {
+      "product_id":2,
+      "category":"Dolore harum.",
+      "category_id":28,
+      "short_name":"Nemo at quisquam quisquam.dyusidasd",
+      "full_name":"Nam nihil dignissimos enim deserunt ut fuga asperiores.",
+      "short_description":"Quia non distinctio tempore expedita eaque repudiandae unde. Qui ipsa et omnis in. Quam quia sunt consequatur et facilis.",
+      "full_description":"Rerum adipisci non id. Ullam sint nulla et fugiat id esse deleniti. Consequatur quis officiis ut facilis. Et quidem pariatur nemo rerum.",
+      "active":true,
+      "created_at":"2021-11-02 17:04:16",
+      "updated_at":"2021-11-06 20:49:47",
+      "manufacturer":"Williamson-Glover",
+      "manufacturer_id":1,
+      "external_id":8287,
+      "img":"https:\/\/picsum.photos\/179\/142",
+      "prices":{
+        "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"568418.70"
+      },
+      "params":{
+        "facere":null,
+        "temporibus":null,
+        "deleniti":null,
+        "tempora":null,
+        "asperiores":null,
+        "ex":null,
+        "quo":null
+      }
+    },
+    {
+      "product_id":3,
+      "category":"Repellendus ratione.",
+      "category_id":27,
+      "short_name":"Similique expedita ad ut aut\u0448\u044b\u044b",
+      "full_name":"Itaque officia aut et nihil.",
+      "short_description":"Eos cum aspernatur quo. A quidem quis omnis sed nobis. Itaque ut qui sint saepe eveniet modi. Omnis sed impedit repellat cumque. Sit necessitatibus ut qui et id. Eum possimus quos et sed voluptatem.",
+      "full_description":"Placeat ea sunt quidem iste. Tempora sed et veniam cupiditate repellat qui quis voluptas. Officia ad minima rem. Sed recusandae et qui sequi.",
+      "active":true,
+      "created_at":"2021-11-02 17:04:16",
+      "updated_at":"2021-11-06 21:26:05",
+      "manufacturer":"Douglas Ltd",
+      "manufacturer_id":7,
+      "external_id":3931,
+      "img":"https:\/\/picsum.photos\/179\/142",
+      "prices":{
+        "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"551626.86",
+        "\u0421\u043a\u0438\u0434\u043a\u0430":"138266.26"
+      },
+      "params":{
+        "tempora":null,
+        "facere":null,
+        "perferendis":null,
+        "repellendus":"string",
+        "aut":null
+      }
+    },
+    {
+      "product_id":4,
+      "category":"Sed explicabo.",
+      "category_id":24,
+      "short_name":"Odit ut dolorem fugiat.\u0432\u0444\u044b\u0432\u0444\u0432",
+      "full_name":"Architecto iusto commodi aspernatur et est cumque architecto.",
+      "short_description":"Laudantium quia quibusdam a molestiae repellendus. Quis eaque quasi commodi sint. Qui sint sapiente eos eligendi consectetur inventore. Qui placeat saepe dolor amet.",
+      "full_description":"Asperiores quasi nostrum officiis laboriosam ea. Velit eligendi expedita perspiciatis sed sint occaecati. Illum dicta unde doloribus sint ex voluptatum. Consectetur ut non et provident sint eum.",
+      "active":true,
+      "created_at":"2021-11-02 17:04:16",
+      "updated_at":"2021-11-06 21:26:58",
+      "manufacturer":"Price Group",
+      "manufacturer_id":10,
+      "external_id":5866,
+      "img":"https:\/\/picsum.photos\/179\/142",
+      "prices":{
+        "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"95038.52",
+        "\u0421\u043a\u0438\u0434\u043a\u0430":"211122.26"
+      },
+      "params":{
+        "quo":null,
+        "tempora":null,
+        "deleniti":null,
+        "repellendus":"string",
+        "aut":null,
+        "ex":null
+      }
+    },
+    {
+      "product_id":5,
+      "category":"Ratione tempore aut.",
+      "category_id":3,
+      "short_name":"Temporibus doloremque enim adipisci earum.",
+      "full_name":"Aut et ut in quae iste quidem cum.",
+      "short_description":"Optio consectetur ipsam expedita perspiciatis numquam. Asperiores non voluptate est sunt ut quis eius. Debitis mollitia ullam qui aut facere possimus pariatur expedita.",
+      "full_description":"Quaerat quo dolorem nihil magnam dolor error praesentium. Vitae earum harum cum tenetur eum dolores. Laborum et dolor assumenda aut fugit. Autem eligendi voluptatem recusandae dignissimos explicabo accusamus doloremque.",
+      "active":true,
+      "created_at":"2021-11-02 17:04:16",
+      "updated_at":"2021-11-06 21:27:22",
+      "manufacturer":"Abshire and Sons",
+      "manufacturer_id":8,
+      "external_id":4195,
+      "img":"https:\/\/picsum.photos\/179\/142",
+      "prices":{
+        "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"69297.20"
+      },
+      "params":{
+        "perferendis":null,
+        "deleniti":null,
+        "asperiores":null,
+        "ex":null
+      }
+    }
+  ],
+  "history":[
+    {
+      "product_id":6,
+      "category":"Perspiciatis dignissimos.",
+      "category_id":19,
+      "short_name":"At aut et commodi.yyyyyy",
+      "full_name":"Aliquam ad modi reprehenderit rem.",
+      "short_description":"Molestiae molestiae odio aliquid dolor sed rerum. Illo quidem qui voluptatem dolor placeat voluptas. Rem tempore qui et nobis beatae omnis et.",
+      "full_description":"Labore vero ut tenetur ipsa reiciendis. Hic et amet consequatur pariatur quaerat.",
+      "active":false,
+      "created_at":"2021-11-02 17:04:16",
+      "updated_at":"2021-11-07 16:32:58",
+      "manufacturer":"Simonis, King and Kautzer",
+      "manufacturer_id":5,
+      "external_id":7406,
+      "img":"https:\/\/picsum.photos\/179\/142",
+      "prices":{
+        "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"860553.14",
+        "\u0421\u043a\u0438\u0434\u043a\u0430":"192038.37"
+      },
+      "params":{
+        "quo":null,
+        "facere":"jhjh",
+        "deleniti":"hhh",
+        "repellendus":null,
+        "temporibus":null,
+        "asperiores":null,
+        "aut":null
+      }
+    },
+    {
+      "product_id":17,
+      "category":"Dolore harum.",
+      "category_id":28,
+      "short_name":"Non est quia porro vero.",
+      "full_name":"Debitis dolorem in dolorem facere et.",
+      "short_description":"Dolor sed reiciendis ex nostrum magni. Ab dolorem non est. Officia atque consequatur rem voluptatum libero nihil. Distinctio iste autem harum quia sint sit.",
+      "full_description":"Architecto saepe eum temporibus vero velit. Totam consequatur voluptatum asperiores expedita. Est nemo amet molestiae id est ex esse.",
+      "active":true,
+      "created_at":"2021-11-02 17:04:16",
+      "updated_at":"2021-11-02 17:04:16",
+      "manufacturer":"Price Group",
+      "manufacturer_id":10,
+      "external_id":6497,
+      "img":"https:\/\/picsum.photos\/179\/142",
+      "prices":{
+        "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"3100.58"
+      },
+      "params":{
+        "facere":"Occaecati necessitatibus.",
+        "temporibus":"Aut nihil eveniet.",
+        "deleniti":"Nam ut ut.",
+        "tempora":null,
+        "asperiores":null,
+        "ex":null,
+        "quo":"Dolorem molestiae dolorem."
+      }
+    },
+    {
+      "product_id":18,
+      "category":"Sint nemo expedita.",
+      "category_id":10,
+      "short_name":"Nulla inventore distinctio.",
+      "full_name":"Sit vel omnis deleniti blanditiis.",
+      "short_description":"Eum ad et nobis nobis maxime quo est. Dolorum recusandae perspiciatis quis aut qui repellat. Quos autem consequatur facere recusandae. Et ea maiores debitis dolor maiores.",
+      "full_description":"Quia id corporis ut veniam debitis consequatur. Et eaque consequatur autem. Vel velit in accusamus vel impedit.",
+      "active":true,
+      "created_at":"2021-11-02 17:04:16",
+      "updated_at":"2021-11-02 17:04:16",
+      "manufacturer":"Abshire and Sons",
+      "manufacturer_id":8,
+      "external_id":4306,
+      "img":"https:\/\/picsum.photos\/179\/142",
+      "prices":{
+        "\u041e\u0431\u044b\u0447\u043d\u0430\u044f \u0446\u0435\u043d\u0430":"827249.48",
+        "\u0421\u043a\u0438\u0434\u043a\u0430":"109285.62"
+      },
+      "params":{
+        "quo":null,
+        "facere":null,
+        "perferendis":"Molestiae nobis.",
+        "deleniti":null,
+        "asperiores":null
+      }
+    }
+  ],
+  "brands":[
+    {
+      "href":"",
+      "img":"https:\/\/picsum.photos\/150\/150"
+    },
+    {
+      "href":"",
+      "img":"https:\/\/picsum.photos\/150\/150"
+    },
+    {
+      "href":"",
+      "img":"https:\/\/picsum.photos\/150\/150"
+    },
+    {
+      "href":"",
+      "img":"https:\/\/picsum.photos\/150\/150"
+    },
+    {
+      "href":"",
+      "img":"https:\/\/picsum.photos\/150\/150"
+    },
+    {
+      "href":"",
+      "img":"https:\/\/picsum.photos\/150\/150"
+    }
+  ]
+}

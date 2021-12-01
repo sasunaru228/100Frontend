@@ -1,0 +1,10 @@
+.holder {
+  display: flex;
+  flex-direction: row;
+}
+.holder img {
+  height: 20px;
+  width: 20px;
+}
+
+/*# sourceMappingURL=Stars.module.css.map */

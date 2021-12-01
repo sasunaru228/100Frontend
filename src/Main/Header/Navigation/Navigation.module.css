@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.main .cities img {
+  transform: translateY(2px);
+  margin-right: 6.5px;
+  margin-left: 22px;
+}
+.main .cities select {
+  border: none;
+  background: transparent;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("img/cities2.svg") no-repeat right;
+  padding-right: 8px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.navigation a {
+  margin-left: 33px;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+/*# sourceMappingURL=Navigation.module.css.map */

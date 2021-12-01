@@ -1,0 +1,12 @@
+.dots {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.dots a {
+  margin-left: 32px;
+}
+
+/*# sourceMappingURL=Dots.module.css.map */

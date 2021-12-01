@@ -1,0 +1,339 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  padding: 0 15px;
+}
+.nav span {
+  margin-right: 15px;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+.nav span img {
+  width: 6px;
+  height: 10px;
+}
+.nav span a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+.nav span a:hover {
+  color: red;
+}
+.nav .arrow {
+  display: flex;
+  align-items: center;
+}
+
+.saleDot {
+  padding: 0 15px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.saleDot span:nth-child(1) {
+  font-family: Ubuntu, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: -0.095em;
+  color: white;
+  background: #C4C4C4;
+  margin-right: 6px;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+.saleDot span:nth-child(1) img {
+  margin-left: 4px;
+  height: 15px;
+  width: 15px;
+}
+.saleDot span:nth-child(2) {
+  border: 1px solid #000000;
+  border-radius: 2px;
+  font-family: Ubuntu, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: -0.095em;
+  padding: 0 11px;
+}
+.saleDot span {
+  height: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.mainName {
+  padding: 0 15px;
+  margin-top: 25px;
+  font-family: Ubuntu, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: -0.07em;
+  color: #000000;
+}
+
+.share {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 25px;
+}
+.share > div {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 15px;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+.share > div > img {
+  margin-right: 6px;
+}
+
+.mainInfo {
+  margin-top: 25px;
+}
+.mainInfo div {
+  margin: 0;
+}
+.mainInfo div div {
+  padding: 0;
+}
+.mainInfo .gallery {
+  background: #C4C4C4;
+  padding: 24px;
+}
+.mainInfo .price {
+  background: #E5E5E5;
+  box-shadow: -3px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 23px 20px;
+}
+.mainInfo .price .cost {
+  font-family: Ubuntu, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
+  color: #000000;
+}
+.mainInfo .price .isHere {
+  margin-top: 16px;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+.mainInfo .price .isHere img {
+  margin-right: 8px;
+}
+.mainInfo .price .saled {
+  margin-top: 16px;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+.mainInfo .price .saled img {
+  margin-right: 12px;
+  margin-left: 5px;
+}
+.mainInfo .price .hr {
+  margin: 18px 0;
+}
+.mainInfo .price .addG {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.mainInfo .price .addG img {
+  margin-right: 9px;
+  margin-left: 4px;
+}
+.mainInfo .price .greyBox {
+  background: #C4C4C4;
+  border-radius: 6px;
+  width: 100%;
+  text-align: center;
+  padding: 19px 0;
+  font-family: Ubuntu, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.mainInfo .price .help {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 65px;
+}
+.mainInfo .price .help img {
+  margin-right: 9px;
+  margin-left: 5px;
+}
+.mainInfo .price .delivery {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+.mainInfo .price .delivery img {
+  margin-right: 11px;
+  margin-left: 3px;
+}
+.mainInfo .price .deliveryNew {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.mainInfo .price .deliveryNew .first {
+  display: flex;
+  flex-direction: row;
+}
+.mainInfo .price .deliveryNew .first img {
+  margin-right: 8px;
+}
+.mainInfo .price .deliveryNew .first .one {
+  margin-left: 0;
+}
+.mainInfo .price .deliveryNew .one {
+  margin-left: 33px;
+  margin-top: 12px;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+.mainInfo .price .deliveryNew .one .two {
+  margin-left: 0;
+}
+.mainInfo .price .deliveryNew .two {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  color: #000000;
+  margin-left: 33px;
+}
+.mainInfo .description {
+  padding: 0 46px 0 26px;
+  display: flex;
+  flex-direction: column;
+}
+.mainInfo .description .article {
+  margin-top: 40px;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+.mainInfo .description .mainDescription {
+  margin-top: 23px;
+}
+.mainInfo .description .fullDescription {
+  margin-top: 16px;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FA520F;
+}
+.mainInfo .description .imp {
+  margin-top: 63px;
+}
+
+.analogs {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.analogs .holder > span {
+  font-family: Ubuntu, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: -0.045em;
+  color: #000000;
+}
+
+.holder .tab .nav-tabs {
+  border: 1px solid red;
+}
+
+.tab {
+  margin-top: 74px;
+}
+.tab ul {
+  border-bottom: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.tab ul:after {
+  margin-top: 7px;
+  content: " ";
+  width: 100%;
+  height: 9px;
+  background: #F3F3F3;
+  border: none;
+  border-radius: 5px;
+}
+.tab ul li {
+  border: none;
+}
+.tab ul li button {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  color: #000000;
+  border: none !important;
+  padding: 0;
+  position: relative;
+}
+
+/*# sourceMappingURL=Product.module.css.map */
