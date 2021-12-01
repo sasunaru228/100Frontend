@@ -3,6 +3,74 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 16px;
+}
+.holder .first {
+  height: 50px;
+  background: #C4C4C4;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+}
+.holder .first span:nth-child(1) {
+  font-family: Ubuntu, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+.holder .first span:nth-child(2) {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+.holder .main {
+  height: 50px;
+  border: 1px solid #C4C4C4;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.holder .main .sign {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #C4C4C4;
+  border-radius: 6px;
+}
+.holder .main .count {
+  font-family: Open Sans, sans-serif;
+  width: 50px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  text-align: center;
+}
+.holder .last {
+  width: 50px;
+  height: 50px;
+  background: #C4C4C4;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.holder .last img {
+  width: 22px;
+  height: 21px;
 }
 
 /*# sourceMappingURL=EditButton.module.css.map */
