@@ -4,7 +4,12 @@ import dot2 from "./dot2.svg"
 import dot3 from "./dot3.svg"
 import classes from "./Dots.module.css";
 
-function Dots() {
+
+
+
+
+function Dots(props) {
+
     return(
         <div className={classes.dots}>
             <NavLink to="">
@@ -13,8 +18,9 @@ function Dots() {
             <NavLink to="">
                 <img src={dot2} alt="dot2" width="24" height="24"/>
             </NavLink>
-            <NavLink to="">
+            <NavLink to="/basket">
                 <img src={dot3} alt="dot3" width="24" height="24"/>
+                {props.counter !== 0 ? <span className={classes.counter}>{props.counter}</span> : null}
             </NavLink>
         </div>
     )

@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import {axiosDefault} from "../../Settings/axiosDefault";
 import {NavLink} from "react-router-dom";
 import Stars from "./Stars/Stars";
-// import Flickity from "react-flickity-component";
 import Recomendations from "../Content/Recomendations/Recomendations";
 import Example from "../Content/Last/Example/Example";
 import Description from "./Description/Description";
@@ -33,6 +32,11 @@ import imp from './imp.png'
 import desc from './desc.png'
 //
 
+
+
+
+
+
 export default function Product(props){
 
     const [data, getData] = useState({});
@@ -54,7 +58,7 @@ export default function Product(props){
     useEffect(() => {
         if (data.product_id !== undefined){
             if (localStorage.getItem(data.product_id)){
-                setCount(localStorage.getItem(data.product_id))
+                setCount(parseInt(localStorage.getItem(data.product_id)))
             }
         }
     }, [data.product_id])
@@ -62,7 +66,7 @@ export default function Product(props){
         if (data.product_id !== undefined && count !== 0){
             localStorage.setItem(data.product_id, count);
         }
-    }, [count])
+    },)
     const firstValue = () => {
        setCount(1)
     }
@@ -72,13 +76,17 @@ export default function Product(props){
         }
         else {
             setCount(0)
-            localStorage.setItem(data.product_id, 0)
+            localStorage.removeItem(data.product_id)
         }
     }
     const plus = () => {
         setCount(parseInt(count) + 1)
     }
-
+    useEffect(() => {
+        props.setCounter(localStorage.length)
+    }, [count])
+    //////// если что-то идет не так, попробовать удалить в зависимости props
+    
     if ((data.prices && props.history) !== undefined){
         return(
             <div className={classes.holder}>

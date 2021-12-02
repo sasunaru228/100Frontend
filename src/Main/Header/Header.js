@@ -6,8 +6,8 @@ import Search from "./Search/Search"
 function Header (props) {
     return(
         <>
-            <Navigation/>
-            <Search data={props.data}/>
+            <Navigation />
+            <Search data={props.data} counter={props.counter}/>
         </>
     )
 }

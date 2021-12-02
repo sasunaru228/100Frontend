@@ -8,6 +8,7 @@ import Catigories from "./Catigories/Catigories";
 import Content from "./Content/Content";
 import Footer from "./Footer/Footer";
 import Product from "./Product/Product";
+import Basket from "./Basket/Basket";
 
 import {axiosDefault} from "../Settings/axiosDefault";
 
@@ -26,10 +27,13 @@ function Main(){
             })
             .catch((error) => console.log(error));
     }
+    const [counter, setCounter] = useState();
+
+
 
         return (
                 <div className={classes.container}>
-                    {data.popular_categories ? <Header data={data.popular_categories}/> : null}
+                    {data.popular_categories ? <Header counter={counter} data={data.popular_categories}/> : null}
                     <Switch>
                         <Route
                             path={'/'}
@@ -44,7 +48,12 @@ function Main(){
                         <Route
                             path={"/product/:id"}
                             exact
-                            component={(props) => <Product {...props} recommend={data.recommends} history={data.history} />}
+                            component={(props) => <Product {...props} setCounter={setCounter} recommend={data.recommends} history={data.history} />}
+                        />
+                        <Route
+                            path={"/basket"}
+                            exact
+                            component={Basket}
                         />
                     </Switch>
                     <Footer/>

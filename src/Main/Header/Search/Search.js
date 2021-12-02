@@ -23,7 +23,7 @@ function Search(props) {
             <Catalog data={props.data}/>
             <SearchBox/>
 
-            <Dots/>
+            <Dots counter={props.counter}/>
         </div>
     )
 }
