@@ -20,7 +20,11 @@ function Dots(props) {
             </NavLink>
             <NavLink to="/basket">
                 <img src={dot3} alt="dot3" width="24" height="24"/>
-                {props.counter !== 0 ? <span className={classes.counter}>{props.counter}</span> : null}
+                {
+                    (props.counter !== 0 && props.counter !== undefined)
+                    ? <span className={classes.counter}>{props.counter}</span>
+                    : null
+                }
             </NavLink>
         </div>
     )

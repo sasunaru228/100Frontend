@@ -13,21 +13,25 @@ import Basket from "./Basket/Basket";
 import {axiosDefault} from "../Settings/axiosDefault";
 
 function Main(){
+    const [counter, setCounter] = useState(0);
 
     const [data, getData] = useState({});
     const url = 'main_page';
     useEffect(() => {
+        setCounter(localStorage.length)
+        const getAllData = () => {
+            axiosDefault.get(url)
+                .then((response) => {
+                    const allData = response.data;
+                    getData(allData);
+                })
+                .catch((error) => console.log(error));
+        }
         getAllData()
     }, []);
-    const getAllData = () => {
-        axiosDefault.get(url)
-            .then((response) => {
-                const allData = response.data;
-                getData(allData);
-            })
-            .catch((error) => console.log(error));
-    }
-    const [counter, setCounter] = useState();
+
+
+
 
 
 
@@ -53,7 +57,7 @@ function Main(){
                         <Route
                             path={"/basket"}
                             exact
-                            component={Basket}
+                            component={() => <Basket recomendations={data.recommends}/>}
                         />
                     </Switch>
                     <Footer/>
