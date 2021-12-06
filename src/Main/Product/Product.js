@@ -40,18 +40,15 @@ import desc from './desc.png'
 export default function Product(props){
 
     const [data, getData] = useState({});
-    const url = 'products/' + props.match.params.id;
     useEffect(() => {
-        const getAllData = async () => {
-            await axiosDefault.get(url)
+            const url = 'products/' + props.match.params.id;
+            axiosDefault.get(url)
                 .then((response) => {
                     const allData = response.data;
                     getData(allData);
                 })
                 .catch((error) => console.log(error));
-        }
-        getAllData()
-    }, [url]);
+    }, []);
 
 
     const [count, setCount] = useState(0);
@@ -85,9 +82,9 @@ export default function Product(props){
     const plus = () => {
         setCount(parseInt(count) + 1)
     }
-    // useEffect(() => {
-    //      props.setCounter(localStorage.length)
-    // }, [count])
+    useEffect(() => {
+         props.setCounter(localStorage.length)
+    }, [count])
     //////// если что-то идет не так, попробовать удалить в зависимости props
 
     if ((data.prices && props.history) !== undefined){

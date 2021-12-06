@@ -30,11 +30,6 @@ function Main(){
         getAllData()
     }, []);
 
-
-
-
-
-
         return (
                 <div className={classes.container}>
                     {data.popular_categories ? <Header counter={counter} data={data.popular_categories}/> : null}
