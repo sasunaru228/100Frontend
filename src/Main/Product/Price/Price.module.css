@@ -1,0 +1,25 @@
+.holder {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.holder .redPrice {
+  font-family: Ubuntu, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
+  color: #FA520F;
+}
+.holder .blackPrice {
+  margin-left: 10px;
+  font-family: Ubuntu, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration-line: line-through;
+  color: #000000;
+}
+
+/*# sourceMappingURL=Price.module.css.map */

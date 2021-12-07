@@ -30,6 +30,7 @@ import logo from './logo.svg'
 //delete this ->
 import imp from './imp.png'
 import desc from './desc.png'
+import Price from "./Price/Price";
 //
 
 
@@ -62,13 +63,12 @@ export default function Product(props){
     }, [data.product_id])
 
     useEffect(() => {
-        props.setCounter(localStorage.length)
         if (data.product_id !== undefined && count !== 0){
             localStorage.setItem(data.product_id, count);
         }
     }, [count])
     const firstValue = () => {
-       setCount(1)
+        setCount(1)
     }
     const minus = () => {
         if (count !== 1){
@@ -80,12 +80,12 @@ export default function Product(props){
         }
     }
     const plus = () => {
+        if (count === 10) return
         setCount(parseInt(count) + 1)
     }
-    useEffect(() => {
-         props.setCounter(localStorage.length)
-    }, [count])
-    //////// если что-то идет не так, попробовать удалить в зависимости props
+    // useEffect(() => {
+    //      props.setCounter(localStorage.length)
+    // }, [])
 
     if ((data.prices && props.history) !== undefined){
         return(
@@ -122,11 +122,15 @@ export default function Product(props){
                     </span>
                 </div>
                 <div className={classes.saleDot}>
-                    <span>
-                        {100 - Math.round((data.prices['Скидка'] / data.prices['Обычная цена']) * 100)}
-                        <img src={percent} alt="percent"/>
-                    </span>
-                    <span>
+                    {
+                        data.prices['Скидка'] ? <span>
+                                                    {100 - Math.round((data.prices['Скидка'] / data.prices['Обычная цена']) * 100)}
+                                                    <img src={percent} alt="percent"/>
+                                                </span>
+                            : null
+                    }
+
+                    <span className={classes.bestSell}>
                         Бестселлер
                     </span>
                 </div>
@@ -173,8 +177,8 @@ export default function Product(props){
                                     <img src={imp} alt="imp"/>
                                 </span>
                             </Col>
-                            <Col lg={3} className={classes.price}>
-                                <span className={classes.cost}>{data.prices['Обычная цена']} руб.</span>
+                            <Col lg={3} className={classes.price} id="clicker">
+                                {data.prices['Скидка'] !== undefined ? <Price data={data}/> : <span className={classes.cost}>{data.prices['Обычная цена']} руб.</span>}
                                 <span className={classes.isHere}><img src={isHere} alt="isHere"/> В наличии</span>
                                 <span className={classes.saled}><img src={saled} alt="saled"/> Узнать о снижении цены</span>
                                 <hr className={classes.hr}/>

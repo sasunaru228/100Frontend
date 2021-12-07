@@ -3,12 +3,26 @@ import dot1 from "./dot1.svg"
 import dot2 from "./dot2.svg"
 import dot3 from "./dot3.svg"
 import classes from "./Dots.module.css";
+import {useEffect, useState} from "react";
 
 
 
 
 
-function Dots(props) {
+function Dots() {
+    const [count, setCount] = useState(1);
+    document.addEventListener('click', () => {
+        setCount(localStorage.length)
+    })
+    useEffect(() => {
+        if (localStorage.length > 0){
+            setCount(localStorage.length)
+        }
+        else {
+            setCount(0)
+        }
+
+    }, [])
 
     return(
         <div className={classes.dots}>
@@ -20,14 +34,11 @@ function Dots(props) {
             </NavLink>
             <NavLink to="/basket">
                 <img src={dot3} alt="dot3" width="24" height="24"/>
-                {
-                    (props.counter !== 0 && props.counter !== undefined)
-                    ? <span className={classes.counter}>{props.counter}</span>
-                    : null
-                }
+                {count > 0 ? <span className={classes.counter}>{count}</span> : null}
             </NavLink>
         </div>
     )
 }
+
 
 export default Dots

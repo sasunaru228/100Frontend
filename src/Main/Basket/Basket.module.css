@@ -325,4 +325,15 @@
   color: #969696;
 }
 
+.ban {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.ban h1 {
+  margin: 200px 0;
+  font-family: "JetBrains Mono", sans-serif;
+}
+
 /*# sourceMappingURL=Basket.module.css.map */
