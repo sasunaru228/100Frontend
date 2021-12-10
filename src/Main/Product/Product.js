@@ -7,6 +7,7 @@ import Example from "../Content/Last/Example/Example";
 import Description from "./Description/Description";
 import AddButton from "./AddButton/AddButton";
 import EditButton from "./EditButton/EditButton";
+import Price from "./Price/Price";
 
 
 import {Row, Col, Tabs, Tab} from "react-bootstrap";
@@ -28,10 +29,10 @@ import delivery from './delivery.svg'
 import deliveryNew from './deliveryNew.svg'
 import logo from './logo.svg'
 
+
 //delete this ->
 import imp from './imp.png'
 import desc from './desc.png'
-import Price from "./Price/Price";
 //
 
 
@@ -175,7 +176,8 @@ export default function Product(props){
                                     Полное описание
                                 </span>
                                 <span className={classes.imp}>
-                                    <img src={imp} alt="imp"/>
+                                    {data.short_description ? data.short_description : null}
+                                    {console.log(data)}
                                 </span>
                             </Col>
                             <Col lg={3} className={classes.price} id="clicker">

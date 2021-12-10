@@ -204,7 +204,7 @@
   margin-left: 5px;
 }
 .mainInfo .price .delivery {
-  margin-top: auto;
+  margin-top: 80.25px;
   font-family: Open Sans, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -281,7 +281,7 @@
   color: #FA520F;
 }
 .mainInfo .description .imp {
-  margin-top: 63px;
+  margin-top: auto;
 }
 
 .analogs {
