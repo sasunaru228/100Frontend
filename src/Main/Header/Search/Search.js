@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "./logo.png"
+import logo from "./logo.svg"
 import classes from "./Search.module.css"
 import Catalog from "./Catalog/Catalog"
 import SearchBox from "./SearchBox/SearchBox"
@@ -9,8 +9,11 @@ import {NavLink} from "react-router-dom";
 function Search(props) {
     return (
         <div className={classes.search}>
-            <NavLink to={"/"}>
+            <NavLink to={"/"} className={classes.mainLogo}>
                 <img src={logo} alt="logo"/>
+                <span>
+                    онлайн <br/> гипермаркет <br/> техники
+                </span>
             </NavLink>
             <div className={classes.phone}>
                 <div>

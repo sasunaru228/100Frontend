@@ -8,12 +8,13 @@ import Description from "./Description/Description";
 import AddButton from "./AddButton/AddButton";
 import EditButton from "./EditButton/EditButton";
 
+
 import {Row, Col, Tabs, Tab} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import classes from "./Product.module.css";
 import './SUKA.css'
 
-
+import want from '../../img/wantCheaper.svg'
 import like from './like.svg'
 import compare from './compare.svg'
 import toShare from './toShare.svg'
@@ -188,7 +189,7 @@ export default function Product(props){
                                 }
 
 
-                                <span className={classes.greyBox}>Хочу дешевле</span>
+                                <span className={classes.wantCheaper}><img src={want} alt="want"/>Хочу дешевле</span>
                                 <span className={classes.help}><img src={help} alt="help"/>Нужна консультация</span>
                                 <span className={classes.delivery}><img src={delivery} alt="delivery"/>Стандартная доставка</span>
                                 <span className={classes.deliveryNew}>

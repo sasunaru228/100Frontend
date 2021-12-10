@@ -41,4 +41,23 @@
   margin-left: 6px;
 }
 
+.mainLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+.mainLogo img {
+  height: 40px;
+}
+.mainLogo span {
+  margin: auto 0 auto 10px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+}
+
 /*# sourceMappingURL=Search.module.css.map */

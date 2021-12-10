@@ -39,6 +39,7 @@ const MainRecomendations = styled.div`
         font-size: 22px;
         letter-spacing: -0.045em;
         color: #000000;
+        margin-left: 2px;
       }
       .costRed{
         font-family: Ubuntu, sans-serif;
@@ -47,6 +48,7 @@ const MainRecomendations = styled.div`
         font-size: 22px;
         letter-spacing: -0.045em;
         color: #FA520F;
+        margin-left: 2px;
       }
       .sale{
         font-family: Ubuntu, sans-serif;
@@ -70,9 +72,10 @@ const MainRecomendations = styled.div`
         color: #000000;
         margin-right: 70px;
         margin-top: 5px;
+        margin-left: 2px;
       }
       .stars{
-        margin: 12px 0;
+        margin: 12px 0 12px 2px;
       }
       button{
         background: #C4C4C4;
@@ -85,6 +88,7 @@ const MainRecomendations = styled.div`
         letter-spacing: -0.045em;
         color: #000000;
         padding: 10px 19px;
+        margin-left: 2px;
       }
       .percent{
         position: absolute;
@@ -121,8 +125,8 @@ function Recomendations(props) {
                                 <div className="HolderItems" key={id}>
                                     <img className="main" src={rec.img} alt="img"/>
                                     <span className="like">
-                                    <img src={like} alt="like" width="24px" height="24px"/>
-                                </span>
+                                        <img src={like} alt="like" width="24px" height="24px"/>
+                                    </span>
                                     {rec.prices['Скидка'] !== undefined ? <ItemRed data={rec.prices}/> : <ItemDefault data={rec.prices['Обычная цена']}/>}
                                     <span className="title">{rec.short_name}</span>
                                     <div className="stars">

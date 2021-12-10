@@ -33,6 +33,7 @@ const LastWatched = styled.div`
         letter-spacing: -0.045em;
         color: #000000;
         margin-top: 10px;
+        margin-left: 2px;
       }
       .costRed{
         font-family: Ubuntu, sans-serif;
@@ -42,6 +43,7 @@ const LastWatched = styled.div`
         letter-spacing: -0.045em;
         color: #FA520F;
         margin-top: 10px;
+        margin-left: 2px;
       }
       .sale{
         font-family: Ubuntu, sans-serif;
@@ -64,9 +66,10 @@ const LastWatched = styled.div`
         margin-right: 70px;
         margin-top: 5px;
         height: 31px;
+        margin-left: 2px;
       }
       .stars{
-        margin: 12px 0;
+        margin: 12px 0 12px 2px;
       }
       button{
         background: #C4C4C4;
@@ -79,6 +82,7 @@ const LastWatched = styled.div`
         letter-spacing: -0.045em;
         color: #000000;
         padding: 10px 19px;
+        margin-left: 2px;
       }
       .percent{
         position: absolute;

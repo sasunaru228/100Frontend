@@ -126,7 +126,7 @@
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  padding: 30px 20px 23px 20px;
+  padding: 30px 20px 30px 20px;
 }
 .mainInfo .price .cost {
   font-family: Ubuntu, sans-serif;
@@ -162,7 +162,7 @@
   margin-left: 5px;
 }
 .mainInfo .price .hr {
-  margin: 18px 0;
+  margin: 21px 0;
 }
 .mainInfo .price .addG {
   font-family: Open Sans, sans-serif;
@@ -171,7 +171,7 @@
   font-size: 14px;
   line-height: 19px;
   color: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 .mainInfo .price .addG img {
   margin-right: 9px;
@@ -198,13 +198,13 @@
   font-size: 14px;
   line-height: 19px;
   color: #000000;
-  margin-bottom: 65px;
 }
 .mainInfo .price .help img {
   margin-right: 9px;
   margin-left: 5px;
 }
 .mainInfo .price .delivery {
+  margin-top: auto;
   font-family: Open Sans, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -334,6 +334,22 @@
   border: none !important;
   padding: 0;
   position: relative;
+}
+
+.wantCheaper {
+  background: none;
+  border: none;
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+.wantCheaper img {
+  margin: 0 9px 0 5px;
 }
 
 /*# sourceMappingURL=Product.module.css.map */

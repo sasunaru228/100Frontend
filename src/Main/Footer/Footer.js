@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import logo from "./logo.png"
+import logo from "./logo.svg"
 import React from "react";
 import {Link} from "react-router-dom";
 import vk from "./vk.svg"
@@ -24,6 +24,9 @@ const MainFooter = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    >img{
+      margin-left: 9px;
+    }
     p{
       font-family: Ubuntu, sans-serif;
       font-style: normal;
@@ -31,7 +34,8 @@ const MainFooter = styled.div`
       font-size: 24px;
       line-height: 127.9%;
       color: #FFFFFF;
-      margin-left: 39px;
+      margin-left: 35px;
+      margin-top: 20px;
     }
     form{
       margin-left: 80px;

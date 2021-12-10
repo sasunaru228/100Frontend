@@ -156,7 +156,7 @@ export default function Basket(props){
                                             <div className={classes.numbers}>
                                                 <span className={classes.totalP}>{item.data.prices['Скидка']} руб.</span>
                                                 <span className={classes.fullP}>{item.data.prices['Обычная цена']} руб.</span>
-                                                <span className={classes.saleP}>{item.data.prices['Обычная цена'] - item.data.prices['Скидка']} руб.</span>
+                                                <span className={classes.saleP}>- {item.data.prices['Обычная цена'] - item.data.prices['Скидка']} руб.</span>
                                             </div>
                                             <select value={item.count} className={classes.counter} onChange={handleChange} id={item.id}>
                                                 {arr.map((item) => {
@@ -187,7 +187,7 @@ export default function Basket(props){
 
                         <span className={classes.sale}>
                         <span>Скидка</span>
-                        <span>{auxInfo.salePrice} руб.</span>
+                        <span>- {auxInfo.salePrice} руб.</span>
                     </span>
 
                         <span className={classes.hr}></span>
