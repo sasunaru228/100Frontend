@@ -1,7 +1,7 @@
 import {NavLink} from "react-router-dom";
-import dot1 from "./dot1.svg"
-import dot2 from "./dot2.svg"
-import dot3 from "./dot3.svg"
+import dot1 from "../../../../img/dot1.svg"
+import dot2 from "../../../../img/dot2.svg"
+import dot3 from "../../../../img/dot3.svg"
 import classes from "./Dots.module.css";
 import {useEffect, useState} from "react";
 
@@ -10,9 +10,14 @@ import {useEffect, useState} from "react";
 
 
 function Dots() {
-    const [count, setCount] = useState(1);
+    const [count, setCount] = useState(0);
     document.addEventListener('click', () => {
-        setCount(localStorage.length)
+        setTimeout(() => {
+            console.log(localStorage.length)
+            setCount(localStorage.length)
+        }, 0)
+
+
     })
     useEffect(() => {
         if (localStorage.length > 0){
