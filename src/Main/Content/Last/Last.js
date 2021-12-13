@@ -69,7 +69,7 @@ function Last(props) {
                     <span className="watched">
                         Вы смотрели
                     </span>
-                    <Example history={props.history}/>
+                    <Example data={props.history}/>
                 </div>
                 <div className="brands">
                     <span>Бренды</span>

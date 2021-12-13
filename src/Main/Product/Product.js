@@ -229,15 +229,15 @@ export default function Product(props){
                 <div className={classes.analogs}>
                     <div className={classes.holder}>
                         <span>Аналоги дешевле</span>
-                        <Example history={props.history}/>
+                        <Example data={props.history}/>
                     </div>
                     <div className={classes.holder}>
                         <span>Вы смотрели</span>
-                        <Example history={props.history}/>
+                        <Example data={props.history}/>
                     </div>
                 </div>
                 <div>
-                    {props.recomendations !== undefined ? <Recomendations data={props.recommend}/>: null}
+                    {props.recommend.length > 0 ? <Recomendations data={props.recommend}/>: null}
                 </div>
             </div>
         )

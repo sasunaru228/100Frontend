@@ -20,7 +20,6 @@ export default function SpecificarionsTab(props){
 
         })
     }
-    console.log(result)
     return(
         <div className={classes.holder}>
             {
@@ -29,9 +28,9 @@ export default function SpecificarionsTab(props){
                         <div key={id} className={classes.item}>
                             <p className={classes.itemHeader}>{key}</p>
                             <div className={classes.itemBody}>
-                                {value.map((step) => {
+                                {value.map((step, id) => {
                                     return(
-                                        <div className={classes.itemBody_box}>
+                                        <div className={classes.itemBody_box} key={id}>
                                             <span className={classes.key}>{step.name}</span>
                                             {step.value ? <span className={classes.value}>{step.value}</span> : <span className={classes.value}>не завезли</span>}
                                         </div>
