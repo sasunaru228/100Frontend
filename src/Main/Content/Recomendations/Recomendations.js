@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import percent from "./percent.svg"
-import star from "./star.svg"
-import like from "./like.svg"
+import percent from "../../../img/Recomendations/percent.svg"
+import star from "../../../img/Recomendations/star.svg"
+import like from "../../../img/Recomendations/like.svg"
 
 const MainRecomendations = styled.div`
   margin-top: 31px;

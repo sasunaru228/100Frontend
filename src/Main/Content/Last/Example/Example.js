@@ -1,6 +1,6 @@
-import like from "../../Recomendations/like.svg";
-import star from "../../Recomendations/star.svg";
-import percent from "../../Recomendations/percent.svg";
+import like from "../../../../img/Recomendations/like.svg";
+import star from "../../../../img/Recomendations/star.svg";
+import percent from "../../../../img/Recomendations/percent.svg";
 import styled from "styled-components";
 
 const LastWatched = styled.div`

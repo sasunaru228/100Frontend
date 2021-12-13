@@ -1,9 +1,9 @@
 import {NavLink} from "react-router-dom";
 
 import classes from "./EditButton.module.css";
-import like from "../like.svg"
-import minus from "./minus.svg"
-import plus from "./plus.svg"
+import like from "../../../img/Product/like.svg"
+import minus from "../../../img/EditButton/minus.svg"
+import plus from "../../../img/EditButton/plus.svg"
 
 export default function EditButton(props){
     return(

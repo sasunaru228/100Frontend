@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import like from "./like.svg"
+import like from "../../../img/BuyOnTime/like.svg"
 import {NavLink} from "react-router-dom";
 
 

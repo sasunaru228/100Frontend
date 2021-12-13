@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "./logo.svg"
+import logo from "../../../img/Search/logo.svg"
 import classes from "./Search.module.css"
 import Catalog from "./Catalog/Catalog"
 import SearchBox from "./SearchBox/SearchBox"

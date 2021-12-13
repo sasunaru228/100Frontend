@@ -4,10 +4,11 @@ import {NavLink} from "react-router-dom";
 import Stars from "./Stars/Stars";
 import Recomendations from "../Content/Recomendations/Recomendations";
 import Example from "../Content/Last/Example/Example";
-import Description from "./Description/Description";
 import AddButton from "./AddButton/AddButton";
 import EditButton from "./EditButton/EditButton";
 import Price from "./Price/Price";
+import SpecificarionsMain from "./SpecificarionsMain/SpecificarionsMain";
+import SpecificarionsTab from "./SpecificarionsTab/SpecificarionsTab";
 
 
 import {Row, Col, Tabs, Tab} from "react-bootstrap";
@@ -16,26 +17,18 @@ import classes from "./Product.module.css";
 import './SUKA.css'
 
 import want from '../../img/wantCheaper.svg'
-import like from './like.svg'
-import compare from './compare.svg'
-import toShare from './toShare.svg'
-import arrow from './arrow.svg'
-import percent from './percent.svg'
-import isHere from './isHere.svg'
-import saled from './saled.svg'
-import addG from './addG.svg'
-import help from './help.svg'
-import delivery from './delivery.svg'
-import deliveryNew from './deliveryNew.svg'
-import logo from './logo.svg'
-
-
-//delete this ->
-import imp from './imp.png'
-import desc from './desc.png'
-//
-
-
+import like from '../../img/Product/like.svg'
+import compare from '../../img/Product/compare.svg'
+import toShare from '../../img/Product/toShare.svg'
+import arrow from '../../img/Product/arrow.svg'
+import percent from '../../img/Product/percent.svg'
+import isHere from '../../img/Product/isHere.svg'
+import saled from '../../img/Product/saled.svg'
+import addG from '../../img/Product/addG.svg'
+import help from '../../img/Product/help.svg'
+import delivery from '../../img/Product/delivery.svg'
+import deliveryNew from '../../img/Product/deliveryNew.svg'
+import logo from '../../img/Product/logo.svg'
 
 
 
@@ -169,15 +162,14 @@ export default function Product(props){
                                 <span className={classes.article}>
                                     Артикул: {data.product_id}
                                 </span>
-                                <span className={classes.mainDescription}>
-                                    <img src={desc} alt="desc"/>
-                                </span>
+
+                                <SpecificarionsMain params={data.params}/>
+
                                 <span className={classes.fullDescription}>
                                     Полное описание
                                 </span>
                                 <span className={classes.imp}>
                                     {data.short_description ? data.short_description : null}
-                                    {console.log(data)}
                                 </span>
                             </Col>
                             <Col lg={3} className={classes.price} id="clicker">
@@ -189,8 +181,6 @@ export default function Product(props){
                                 {
                                     count !== 0 ? <EditButton count={count} info={data} handleChangeMinus={minus} handleChangePlus={plus} /> : <AddButton info={data} handleChange={firstValue} />
                                 }
-
-
                                 <span className={classes.wantCheaper}><img src={want} alt="want"/>Хочу дешевле</span>
                                 <span className={classes.help}><img src={help} alt="help"/>Нужна консультация</span>
                                 <span className={classes.delivery}><img src={delivery} alt="delivery"/>Стандартная доставка</span>
@@ -209,15 +199,13 @@ export default function Product(props){
                             </Col>
                         </Row>
                 </div>
-
                 <div className={classes.tab}>
                     <Tabs
                         defaultActiveKey="Description"
                     >
                         <Tab title="Описание и характеристики" eventKey="Description" tabClassName={classes.tabItem}>
-                            <Description/>
+                            <SpecificarionsTab params={data.params}/>
                         </Tab>
-                        <span>kkk</span>
 
                         <Tab title="Аксессуары" eventKey="Accessories" tabClassName={classes.tabItem}>
                             <p>Accessories</p>

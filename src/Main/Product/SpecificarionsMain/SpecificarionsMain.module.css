@@ -1,0 +1,30 @@
+.mainHolder {
+  margin-top: 23px;
+}
+.mainHolder .specItem {
+  margin-top: 17px;
+  display: flex;
+  flex-direction: row;
+}
+.mainHolder .specItem span:nth-child(1) {
+  flex-grow: 1;
+  font-family: Ubuntu, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  letter-spacing: -0.04em;
+  color: #000000;
+}
+.mainHolder .specItem span:nth-child(2) {
+  flex-grow: 1;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.025em;
+  color: #000000;
+}
+
+/*# sourceMappingURL=SpecificarionsMain.module.css.map */

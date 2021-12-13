@@ -1,9 +1,9 @@
-import classes from "./Basket.module.css";
-import {NavLink} from "react-router-dom";
-import arrow from "../Product/arrow.svg";
-import Recomendations from "../Content/Recomendations/Recomendations";
-import {useEffect, useState} from "react";
-import {axiosDefault} from "../../Settings/axiosDefault";
+import classes from "./Basket.module.css"
+import {NavLink} from "react-router-dom"
+import arrow from "/src/img/Basket/arrow.svg"
+import Recomendations from "../Content/Recomendations/Recomendations"
+import {useEffect, useState} from "react"
+import {axiosDefault} from "../../Settings/axiosDefault"
 
 export default function Basket(props){
     const arr = [1,2,3,4,5,6,7,8,9,10];
@@ -115,7 +115,7 @@ export default function Basket(props){
                 </span>
 
                 <span className={classes.arrow}>
-                    <img src={arrow} alt="arrow"/>
+                    <img src={arrow2} alt="arrow"/>
                 </span>
 
                 <span>
