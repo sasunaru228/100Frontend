@@ -1,6 +1,6 @@
 import classes from "./Basket.module.css"
 import {NavLink} from "react-router-dom"
-import arrow from "/src/img/Basket/arrow.svg"
+import arrow from "./arrow.svg"
 import Recomendations from "../Content/Recomendations/Recomendations"
 import {useEffect, useState} from "react"
 import {axiosDefault} from "../../Settings/axiosDefault"
@@ -115,7 +115,7 @@ export default function Basket(props){
                 </span>
 
                 <span className={classes.arrow}>
-                    <img src={arrow2} alt="arrow"/>
+                    <img src={arrow} alt="arrow"/>
                 </span>
 
                 <span>

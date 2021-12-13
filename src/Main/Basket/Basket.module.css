@@ -177,7 +177,7 @@
   line-height: 17px;
   color: #000000;
   padding: 8px 72px 8px 10px;
-  background: url("src/img/Basket/arrow.svg") no-repeat right 8px center;
+  background: url("arrow.svg") no-repeat right 8px center;
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;

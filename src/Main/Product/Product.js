@@ -119,7 +119,7 @@ export default function Product(props){
                 <div className={classes.saleDot}>
                     {
                         data.prices['Скидка'] ? <span>
-                                                    {100 - Math.round((data.prices['Скидка'] / data.prices['Обычная цена']) * 100)}
+                                                    - {100 - Math.round((data.prices['Скидка'] / data.prices['Обычная цена']) * 100)}
                                                     <img src={percent} alt="percent"/>
                                                 </span>
                             : null
