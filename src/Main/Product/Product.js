@@ -179,7 +179,7 @@ export default function Product(props){
                                 <hr className={classes.hr}/>
                                 <span className={classes.addG}><img src={addG} alt="addG"/> Купить дополнительную гарантию</span>
                                 {
-                                    count !== 0 ? <EditButton count={count} info={data} handleChangeMinus={minus} handleChangePlus={plus} /> : <AddButton info={data} handleChange={firstValue} />
+                                    count !== 0 ? <EditButton count={count} info={data} handleChangeMinus={minus} handleChangePlus={plus} /> : <AddButton word={"Добавить в корзину"} info={data} handleChange={firstValue} />
                                 }
                                 <span className={classes.wantCheaper}><img src={want} alt="want"/>Хочу дешевле</span>
                                 <span className={classes.help}><img src={help} alt="help"/>Нужна консультация</span>

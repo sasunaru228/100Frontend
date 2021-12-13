@@ -7,23 +7,23 @@ import plus from "../../../img/EditButton/plus.svg"
 
 export default function EditButton(props){
     return(
-        <span className={classes.holder}>
+        <span className={'holder'}>
             <NavLink to="/basket">
-                <span className={classes.first}>
+                <span className={'first'}>
                     <span>В корзине</span>
                     <span>Перейти</span>
                 </span>
             </NavLink>
-            <span className={classes.main}>
-                <span className={classes.sign} onClick={props.handleChangeMinus}>
+            <span className={'main'}>
+                <span className={'sign'} onClick={props.handleChangeMinus}>
                     <img src={minus} alt="minus"/>
                 </span>
-                <span className={classes.count}>{props.count}</span>
-                <span className={classes.sign} onClick={props.handleChangePlus}>
+                <span className={'count'}>{props.count}</span>
+                <span className={'sign'} onClick={props.handleChangePlus}>
                     <img src={plus} alt="plus"/>
                 </span>
             </span>
-            <span className={classes.last}>
+            <span className={'last'}>
                 <img src={like} alt="like"/>
             </span>
         </span>
