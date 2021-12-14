@@ -57,9 +57,7 @@ export default function Example(props){
             ...prevState,
             [id] : prevState[id] + 1
         }))
-        setTimeout(() => {
-            localStorage.setItem(id, Number.parseInt(localStorage.getItem(id)) + 1)
-        }, 1000)
+        localStorage.setItem(id, Number.parseInt(localStorage.getItem(id)) + 1)
 
 
     }
