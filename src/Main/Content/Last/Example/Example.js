@@ -20,54 +20,48 @@ export default function Example(props){
     //     }
     // }, [props.data.product_id])
     //
-    useEffect(() => {
-        if (props.data.product_id !== undefined && count !== 0){
-            localStorage.setItem(props.data.product_id, count);
-        }
-    }, [count])
+    // useEffect(() => {
+    //     if (props.data.product_id !== undefined && count !== 0){
+    //         localStorage.setItem(props.data.product_id, count);
+    //     }
+    // }, [count])
+    
 
     const firstValue = (id) => {
-        console.log(id)
         setCount({
             ...count,
             [id]: 1
         })
         localStorage.setItem(id, 1)
-
-        setTimeout(() => {
-            console.log(count)
-        }, 1000)
     }
     const minus = (id) => {
-        console.log(id)
 
         if (count[id] !== 1){
             setCount((prevState) => ({
                 ...prevState,
                 [id] : prevState[id] - 1
             }))
+            localStorage.setItem(id, localStorage.getItem(id) - 1)
         }
         else {
             setCount(prevState => ({
                 ...prevState,
                 [id] : undefined
             }))
+            localStorage.removeItem(id)
         }
-        setTimeout(() => {
-            console.log(count)
-        }, 1000)
     }
     const plus = (id) => {
-        console.log(id)
         if (count[id] === 10) return
         setCount((prevState) => ({
             ...prevState,
             [id] : prevState[id] + 1
         }))
-
         setTimeout(() => {
-            console.log(count)
+            localStorage.setItem(id, Number.parseInt(localStorage.getItem(id)) + 1)
         }, 1000)
+
+
     }
 
     return(
