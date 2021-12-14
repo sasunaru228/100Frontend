@@ -1,6 +1,5 @@
 import {NavLink} from "react-router-dom";
 
-import classes from "./EditButton.module.css";
 import like from "../../../img/Product/like.svg"
 import minus from "../../../img/EditButton/minus.svg"
 import plus from "../../../img/EditButton/plus.svg"
@@ -15,11 +14,15 @@ export default function EditButton(props){
                 </span>
             </NavLink>
             <span className={'main'}>
-                <span className={'sign'} onClick={props.handleChangeMinus}>
+                <span className={'sign'} onClick={() => {
+                    props.handleChangeMinus(props.idx)
+                }}>
                     <img src={minus} alt="minus"/>
                 </span>
                 <span className={'count'}>{props.count}</span>
-                <span className={'sign'} onClick={props.handleChangePlus}>
+                <span className={'sign'} onClick={() => {
+                    props.handleChangePlus(props.idx)
+                }}>
                     <img src={plus} alt="plus"/>
                 </span>
             </span>

@@ -10,37 +10,64 @@ import EditButton from "../../../Product/EditButton/EditButton";
 
 export default function Example(props){
 
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState({});
 
-    useEffect(() => {
-        if (props.data.product_id !== undefined){
-            if (localStorage.getItem(props.data.product_id)){
-                setCount(parseInt(localStorage.getItem(props.data.product_id)))
-            }
-        }
-    }, [props.data.product_id])
-
+    // useEffect(() => {
+    //     if (props.data.product_id !== undefined){
+    //         if (localStorage.getItem(props.data.product_id)){
+    //             setCount(parseInt(localStorage.getItem(props.data.product_id)))
+    //         }
+    //     }
+    // }, [props.data.product_id])
+    //
     useEffect(() => {
         if (props.data.product_id !== undefined && count !== 0){
             localStorage.setItem(props.data.product_id, count);
         }
     }, [count])
 
-    const firstValue = () => {
-        setCount(1)
+    const firstValue = (id) => {
+        console.log(id)
+        setCount({
+            ...count,
+            [id]: 1
+        })
+        localStorage.setItem(id, 1)
+
+        setTimeout(() => {
+            console.log(count)
+        }, 1000)
     }
-    const minus = () => {
-        if (count !== 1){
-            setCount(count - 1)
+    const minus = (id) => {
+        console.log(id)
+
+        if (count[id] !== 1){
+            setCount((prevState) => ({
+                ...prevState,
+                [id] : prevState[id] - 1
+            }))
         }
         else {
-            setCount(0)
-            localStorage.removeItem(props.data.product_id)
+            setCount(prevState => ({
+                ...prevState,
+                [id] : undefined
+            }))
         }
+        setTimeout(() => {
+            console.log(count)
+        }, 1000)
     }
-    const plus = () => {
-        if (count === 10) return
-        setCount(parseInt(count) + 1)
+    const plus = (id) => {
+        console.log(id)
+        if (count[id] === 10) return
+        setCount((prevState) => ({
+            ...prevState,
+            [id] : prevState[id] + 1
+        }))
+
+        setTimeout(() => {
+            console.log(count)
+        }, 1000)
     }
 
     return(
@@ -61,11 +88,9 @@ export default function Example(props){
                                 </div>
                                 <div className={'sasuNaru'}>
                                     {
-                                        count !== 0 ? <EditButton id="hi" count={count} info={props.data} handleChangeMinus={minus} handleChangePlus={plus} /> : <AddButton word={"В корзину"} info={props.data} handleChange={firstValue} />
+                                        count[main.product_id] !== undefined ? <EditButton idx={main.product_id} count={count[main.product_id]} info={props.data} handleChangeMinus={minus} handleChangePlus={plus} /> : <AddButton idx={main.product_id} word={"В корзину"} info={props.data} handleChange={firstValue} />
                                     }
                                 </div>
-
-                                {/*<span className={classes.button}>В корзину</span>*/}
                             </NavLink>
                         )
                     }
