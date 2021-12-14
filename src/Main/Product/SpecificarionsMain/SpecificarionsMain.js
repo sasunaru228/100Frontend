@@ -34,10 +34,11 @@ const paramss = [
 ]
 
 export default function SpecificarionsMain(props){
+    console.log(props.params)
     return (
         <span className={classes.mainHolder}>
-            {paramss.map((item, id) => {
-                if (item.isMain){
+            {props.params.map((item, id) => {
+                if (item.is_main === true){
                     return(
                         <span className={classes.specItem} key={id}>
                             <span>{item.name}</span>

@@ -6,26 +6,24 @@ import {NavLink} from "react-router-dom";
 import AddButton from "../../../Product/AddButton/AddButton";
 import React, {useEffect, useState} from "react";
 import EditButton from "../../../Product/EditButton/EditButton";
+import data from "bootstrap/js/src/dom/data";
 
 
 export default function Example(props){
 
     const [count, setCount] = useState({});
 
-    // useEffect(() => {
-    //     if (props.data.product_id !== undefined){
-    //         if (localStorage.getItem(props.data.product_id)){
-    //             setCount(parseInt(localStorage.getItem(props.data.product_id)))
-    //         }
-    //     }
-    // }, [props.data.product_id])
-    //
-    // useEffect(() => {
-    //     if (props.data.product_id !== undefined && count !== 0){
-    //         localStorage.setItem(props.data.product_id, count);
-    //     }
-    // }, [count])
 
+    useEffect(() => {
+        props.data.forEach((item) => {
+            if (localStorage.getItem(item.product_id)){
+                setCount(prevState => ({
+                    ...prevState,
+                    [item.product_id]: localStorage.getItem(item.product_id)
+                }))
+            }
+        })
+    }, [])
 
     const firstValue = (id) => {
         setCount({
@@ -58,7 +56,6 @@ export default function Example(props){
             [id] : prevState[id] + 1
         }))
         localStorage.setItem(id, Number.parseInt(localStorage.getItem(id)) + 1)
-
 
     }
 
