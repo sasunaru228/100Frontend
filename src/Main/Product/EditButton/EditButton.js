@@ -14,14 +14,16 @@ export default function EditButton(props){
                 </span>
             </NavLink>
             <span className={'main'}>
-                <span className={'sign'} onClick={() => {
+                <span className={'sign'} onClick={(e) => {
                     props.handleChangeMinus(props.idx)
+                    e.preventDefault()
                 }}>
                     <img src={minus} alt="minus"/>
                 </span>
                 <span className={'count'}>{props.count}</span>
-                <span className={'sign'} onClick={() => {
+                <span className={'sign'} onClick={(e) => {
                     props.handleChangePlus(props.idx)
+                    e.preventDefault()
                 }}>
                     <img src={plus} alt="plus"/>
                 </span>

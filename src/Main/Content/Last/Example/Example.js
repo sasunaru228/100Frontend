@@ -25,7 +25,7 @@ export default function Example(props){
     //         localStorage.setItem(props.data.product_id, count);
     //     }
     // }, [count])
-    
+
 
     const firstValue = (id) => {
         setCount({
