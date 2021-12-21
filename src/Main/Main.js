@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {Route, Switch} from "react-router-dom";
 import classes from "./Main.module.css";
 
+
 import Header from "./Header/Header";
 import Banner from "./Banner/Banner";
 import Catigories from "./Catigories/Catigories";

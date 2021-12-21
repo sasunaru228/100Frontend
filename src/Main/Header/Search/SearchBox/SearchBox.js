@@ -1,6 +1,6 @@
 import React from "react"
 import submit from "./submit.svg"
-import classes from "./SearchBox.module.sass"
+import classes from "./SearchBox.module.css"
 
 function SearchBox() {
     const [search, setSearch] = React.useState('');

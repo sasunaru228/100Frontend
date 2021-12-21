@@ -1,9 +1,9 @@
 import React, {useState} from "react";
-import ii from "./o.svg"
+import ii from "../../../../img/Catalog/o.svg"
 import classes from "./Catalog.module.css";
 import styled from "styled-components";
-import arrow from "./arrow.svg";
-import test from "./test.svg";
+import arrow from "../../../../img/Catalog/arrow.svg";
+import test from "../../../../img/Catalog/test.svg";
 
 const kkk = ['Первая','Вторая','Третья','Четвертая','Пятая', 'Шестая', 'Пример', 'Пример', 'Пример', 'Пример', 'Пример', 'и еще'];
 const DropDown = styled.div`

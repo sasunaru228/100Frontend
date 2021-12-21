@@ -1,9 +1,9 @@
-import classes from "./Basket.module.css";
-import {NavLink} from "react-router-dom";
-import arrow from "../Product/arrow.svg";
-import Recomendations from "../Content/Recomendations/Recomendations";
-import {useEffect, useState} from "react";
-import {axiosDefault} from "../../Settings/axiosDefault";
+import classes from "./Basket.module.css"
+import {NavLink} from "react-router-dom"
+import arrow from "../../img/Product/arrow.svg"
+import Recomendations from "../Content/Recomendations/Recomendations"
+import {useEffect, useState} from "react"
+import {axiosDefault} from "../../Settings/axiosDefault"
 
 export default function Basket(props){
     const arr = [1,2,3,4,5,6,7,8,9,10];
@@ -64,7 +64,7 @@ export default function Basket(props){
 
 
 
-
+    console.log(data)
     const [auxInfo, setAuxInfo] = useState({})
     useEffect(() => {
         if (data.length > 0){
@@ -83,6 +83,9 @@ export default function Basket(props){
                     value1 += Number.parseFloat(item.data.prices['Обычная цена']) * item.count;
                     if (item.data.prices['Скидка'] !== undefined || item.data.prices['Скидка'] === 0){
                         value2 += Number.parseFloat(item.data.prices['Скидка']) * item.count;
+                    }
+                    else {
+                        value1 -= Number.parseFloat(item.data.prices['Обычная цена']) * item.count;
                     }
                 })
                 return Math.floor((value1 - value2) * 100) / 100
@@ -103,7 +106,6 @@ export default function Basket(props){
             })
         }
     }, [data])
-
 
     return(
         <div className={classes.basket}>
@@ -138,6 +140,7 @@ export default function Basket(props){
                         <hr/>
                         {
                             data.map((item, index) => {
+                                console.log(item.data.prices)
                                 return (
                                     <div className={classes.bItem} key={index}>
                                         <div className={classes.bItem__into}>
@@ -154,9 +157,17 @@ export default function Basket(props){
                                                 <span className={classes.like}>В избранное</span>
                                             </div>
                                             <div className={classes.numbers}>
-                                                <span className={classes.totalP}>{item.data.prices['Скидка']} руб.</span>
-                                                <span className={classes.fullP}>{item.data.prices['Обычная цена']} руб.</span>
-                                                <span className={classes.saleP}>- {item.data.prices['Обычная цена'] - item.data.prices['Скидка']} руб.</span>
+                                                {
+                                                    item.data.prices['Скидка'] ? <span className={classes.totalP}>{item.data.prices['Скидка']} руб.</span> : null
+                                                }
+                                                {
+                                                    item.data.prices['Скидка'] ?  <span className={classes.fullP}>{item.data.prices['Обычная цена']} руб.</span> : <span className={classes.fullPP}>{item.data.prices['Обычная цена']} руб.</span>
+                                                }
+
+                                                {
+                                                    item.data.prices['Скидка'] ? <span className={classes.saleP}>- {item.data.prices['Обычная цена'] - item.data.prices['Скидка']} руб.</span> : null
+                                                }
+
                                             </div>
                                             <select value={item.count} className={classes.counter} onChange={handleChange} id={item.id}>
                                                 {arr.map((item) => {
@@ -184,17 +195,16 @@ export default function Basket(props){
                         <span>Товары ({data.length})</span>
                         <span>{auxInfo.fullPrice} руб.</span>
                     </span>
+                        {
+                            auxInfo.salePrice > 0 ?<span className={classes.sale}><span>Скидка</span><span>- {auxInfo.salePrice} руб.</span></span>: null
+                        }
 
-                        <span className={classes.sale}>
-                        <span>Скидка</span>
-                        <span>- {auxInfo.salePrice} руб.</span>
-                    </span>
 
                         <span className={classes.hr}></span>
 
                         <span className={classes.total}>
                         <span>Общая стоимость</span>
-                        <span>{auxInfo.totalPrice} руб.</span>
+                        <span>{auxInfo.fullPrice - auxInfo.salePrice} руб.</span>
                     </span>
 
                         <span className={classes.goToOffer} onClick={() => {

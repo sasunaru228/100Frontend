@@ -177,20 +177,6 @@
   margin-right: 9px;
   margin-left: 4px;
 }
-.mainInfo .price .greyBox {
-  background: #C4C4C4;
-  border-radius: 6px;
-  width: 100%;
-  text-align: center;
-  padding: 19px 0;
-  font-family: Ubuntu, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  color: #000000;
-  margin-bottom: 16px;
-}
 .mainInfo .price .help {
   font-family: Open Sans, sans-serif;
   font-style: normal;
@@ -267,9 +253,6 @@
   font-size: 12px;
   line-height: 16px;
   color: #000000;
-}
-.mainInfo .description .mainDescription {
-  margin-top: 23px;
 }
 .mainInfo .description .fullDescription {
   margin-top: 16px;

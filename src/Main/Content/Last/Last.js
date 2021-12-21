@@ -5,7 +5,7 @@ import Example from "./Example/Example";
 
 
 const LastMain = styled.div`
-  .holder{
+  .holderMain{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -64,12 +64,12 @@ const LastMain = styled.div`
 function Last(props) {
     return (
         <LastMain>
-            <div className="holder">
+            <div className="holderMain">
                 <div className="watchedHolder">
                     <span className="watched">
                         Вы смотрели
                     </span>
-                    <Example history={props.history}/>
+                    <Example word={"В корзину"} data={props.history}/>
                 </div>
                 <div className="brands">
                     <span>Бренды</span>

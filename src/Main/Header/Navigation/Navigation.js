@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Navigation.module.css";
 import {NavLink} from "react-router-dom";
-import svg1 from "./img/cities.svg"
+import svg1 from "../../../img/Navigation/cities.svg"
 
 
 let choice = {

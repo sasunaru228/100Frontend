@@ -1,12 +1,19 @@
-import classes from "../Product.module.css"
+
+
 
 export default function AddButton (props){
     return(
-        <span
-            className={classes.greyBox}
-            onClick={props.handleChange}
+        <div
+            className="greyBox"
+            onClick={(e) => {
+                props.handleChange(props.idx)
+                e.preventDefault()
+
+            }}
         >
-            Добавить в корзину
-        </span>
+            <span className="word">
+               {props.word}
+            </span>
+        </div>
     )
 }

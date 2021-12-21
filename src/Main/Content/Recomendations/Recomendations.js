@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import percent from "./percent.svg"
-import star from "./star.svg"
-import like from "./like.svg"
+import Example from "../Last/Example/Example";
 
 const MainRecomendations = styled.div`
   margin-top: 31px;
@@ -111,7 +109,6 @@ const MainRecomendations = styled.div`
   }
 `
 
-
 function Recomendations(props) {
     return(
         <MainRecomendations>
@@ -119,51 +116,10 @@ function Recomendations(props) {
                 Рекомендации для вас
             </span>
             <div>
-                {
-                    props.data.map((rec, id) => {
-                            return (
-                                <div className="HolderItems" key={id}>
-                                    <img className="main" src={rec.img} alt="img"/>
-                                    <span className="like">
-                                        <img src={like} alt="like" width="24px" height="24px"/>
-                                    </span>
-                                    {rec.prices['Скидка'] !== undefined ? <ItemRed data={rec.prices}/> : <ItemDefault data={rec.prices['Обычная цена']}/>}
-                                    <span className="title">{rec.short_name}</span>
-                                    <div className="stars">
-                                        <img src={star} alt="star"/>
-                                        <img src={star} alt="star"/>
-                                        <img src={star} alt="star"/>
-                                        <img src={star} alt="star"/>
-                                        <img src={star} alt="star"/>
-                                    </div>
-                                    <button>В корзину</button>
-                                </div>
-                            )
-                        }
-                    )
-                }
+                {props.data ? <Example data={props.data}/>: null}
             </div>
 
         </MainRecomendations>
-    )
-}
-function ItemDefault(props) {
-    return(
-        <>
-            <span className="cost">
-                {props.data} руб.
-            </span>
-        </>
-
-    )
-}
-function ItemRed(props) {
-    return(
-        <>
-            <span className="percent">-{100 - Math.round((props.data['Скидка'] / props.data['Обычная цена']) * 100)}%<img src={percent} alt="percent"/></span>
-            <span className="costRed">{Math.round(props.data['Скидка'])} руб.</span>
-            <span className="sale">{Math.round(props.data['Обычная цена'])} руб</span>
-        </>
     )
 }
 

@@ -1,6 +1,6 @@
 import classes from './Stars.module.css'
-import isLight from './isLight.svg'
-import notLight from './notLight.svg'
+import isLight from '../../../img/Stars/isLight.svg'
+import notLight from '../../../img/Stars/notLight.svg'
 
 export default function Stars(props){
     const setter = [];
