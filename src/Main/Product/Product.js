@@ -9,6 +9,7 @@ import EditButton from "./EditButton/EditButton";
 import Price from "./Price/Price";
 import SpecificarionsMain from "./SpecificarionsMain/SpecificarionsMain";
 import SpecificarionsTab from "./SpecificarionsTab/SpecificarionsTab";
+import 'flickity-as-nav-for'
 
 
 import {Row, Col, Tabs, Tab} from "react-bootstrap";
@@ -29,36 +30,58 @@ import help from '../../img/Product/help.svg'
 import delivery from '../../img/Product/delivery.svg'
 import deliveryNew from '../../img/Product/deliveryNew.svg'
 import logo from '../../img/Product/logo.svg'
+import Flickity from "react-flickity-component";
+import styled from "styled-components";
 
 
+const ImgMain = styled.div`
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: 400px;
+  }
+`
 
+const ImgNav = styled.img`
+  width: 172px;
+  height: 134px;
+  object-fit: fill;
+  margin: 20px 8px 0 8px;
+  cursor: pointer;
+  &:first-child {
+    margin-left: 0;
+  }
+`
 
-export default function Product(props){
+export default function Product(props) {
 
     const [data, getData] = useState({});
     useEffect(() => {
-            const url = 'products/' + props.match.params.id;
-            axiosDefault.get(url)
-                .then((response) => {
-                    const allData = response.data;
-                    getData(allData);
-                })
-                .catch((error) => console.log(error));
+        const url = 'products/' + props.match.params.id;
+        axiosDefault.get(url)
+            .then((response) => {
+                const allData = response.data;
+                getData(allData);
+            })
+            .catch((error) => console.log(error));
     }, []);
 
 
     const [count, setCount] = useState(0);
 
     useEffect(() => {
-        if (data.product_id !== undefined){
-            if (localStorage.getItem(data.product_id)){
+        if (data.product_id !== undefined) {
+            if (localStorage.getItem(data.product_id)) {
                 setCount(parseInt(localStorage.getItem(data.product_id)))
             }
         }
     }, [data.product_id])
 
     useEffect(() => {
-        if (data.product_id !== undefined && count !== 0){
+        if (data.product_id !== undefined && count !== 0) {
             localStorage.setItem(data.product_id, count);
         }
     }, [count])
@@ -66,10 +89,9 @@ export default function Product(props){
         setCount(1)
     }
     const minus = () => {
-        if (count !== 1){
+        if (count !== 1) {
             setCount(count - 1)
-        }
-        else {
+        } else {
             setCount(0)
             localStorage.removeItem(data.product_id)
         }
@@ -82,8 +104,8 @@ export default function Product(props){
     //      props.setCounter(localStorage.length)
     // }, [])
 
-    if ((data.prices && props.history) !== undefined){
-        return(
+    if ((data.prices && props.history) !== undefined) {
+        return (
             <div className={classes.holder}>
                 <div className={classes.nav}>
                     <span>
@@ -94,23 +116,23 @@ export default function Product(props){
                     <span className={classes.arrow}>
                         <img src={arrow} alt="arrow"/>
                     </span>
-                        <span>
+                    <span>
                         <NavLink to={''}>
                             Раздел
                         </NavLink>
                     </span>
-                        <span className={classes.arrow}>
+                    <span className={classes.arrow}>
                         <img src={arrow} alt="arrow"/>
                     </span>
-                        <span>
+                    <span>
                         <NavLink to={''}>
                             Подраздел
                         </NavLink>
                     </span>
-                        <span className={classes.arrow}>
+                    <span className={classes.arrow}>
                         <img src={arrow} alt="arrow"/>
                     </span>
-                        <span>
+                    <span>
                         <NavLink to={''}>
                             Товар
                         </NavLink>
@@ -120,7 +142,7 @@ export default function Product(props){
                     {
                         data.prices['Скидка'] ? <span>
                                                     - {100 - Math.round((data.prices['Скидка'] / data.prices['Обычная цена']) * 100)}
-                                                    <img src={percent} alt="percent"/>
+                                <img src={percent} alt="percent"/>
                                                 </span>
                             : null
                     }
@@ -151,40 +173,72 @@ export default function Product(props){
                     </div>
                 </div>
                 <div className={classes.mainInfo}>
-                        <Row>
-                            <Col lg={5} className={classes.gallery}>
-
-                            </Col>
-                            <Col lg={4} className={classes.description}>
+                    <Row>
+                        <Col lg={5} className={classes.gallery}>
+                            <Flickity
+                                className={'carousel carousel-main'}
+                                elementType={'div'}
+                                options={{
+                                    prevNextButtons: false,
+                                    pageDots: false,
+                                    contain: true,
+                                }}
+                                disableImagesLoaded={false}
+                                reloadOnUpdate
+                            >
+                                {
+                                    data?.imgs?.map(item => <ImgMain>
+                                        <img src={item} alt=""/>
+                                    </ImgMain>)
+                                }
+                            </Flickity>
+                            <Flickity
+                                className={'carousel carousel-nav'}
+                                options={{
+                                    asNavFor: '.carousel-main',
+                                    contain: true,
+                                    pageDots: false,
+                                    prevNextButtons: false
+                                }}>
+                                {
+                                    data?.imgs?.map(item => <ImgNav src={item} alt=""/>)
+                                }
+                            </Flickity>
+                        </Col>
+                        <Col lg={4} className={classes.description}>
                                 <span>
                                     <img src={logo} alt="logo"/>
                                 </span>
-                                <span className={classes.article}>
+                            <span className={classes.article}>
                                     Артикул: {data.product_id}
                                 </span>
 
-                                <SpecificarionsMain params={data.params}/>
+                            <SpecificarionsMain params={data.params}/>
 
-                                <span className={classes.fullDescription}>
+                            <span className={classes.fullDescription}>
                                     Полное описание
                                 </span>
-                                <span className={classes.imp}>
+                            <span className={classes.imp}>
                                     {data.short_description ? data.short_description : null}
                                 </span>
-                            </Col>
-                            <Col lg={3} className={classes.price} id="clicker">
-                                {data.prices['Скидка'] !== undefined ? <Price data={data}/> : <span className={classes.cost}>{data.prices['Обычная цена']} руб.</span>}
-                                <span className={classes.isHere}><img src={isHere} alt="isHere"/> В наличии</span>
-                                <span className={classes.saled}><img src={saled} alt="saled"/> Узнать о снижении цены</span>
-                                <hr className={classes.hr}/>
-                                <span className={classes.addG}><img src={addG} alt="addG"/> Купить дополнительную гарантию</span>
-                                {
-                                    count !== 0 ? <EditButton count={count} info={data} handleChangeMinus={minus} handleChangePlus={plus} /> : <AddButton word={"Добавить в корзину"} info={data} handleChange={firstValue} />
-                                }
-                                <span className={classes.wantCheaper}><img src={want} alt="want"/>Хочу дешевле</span>
-                                <span className={classes.help}><img src={help} alt="help"/>Нужна консультация</span>
-                                <span className={classes.delivery}><img src={delivery} alt="delivery"/>Стандартная доставка</span>
-                                <span className={classes.deliveryNew}>
+                        </Col>
+                        <Col lg={3} className={classes.price} id="clicker">
+                            {data.prices['Скидка'] !== undefined ? <Price data={data}/> :
+                                <span className={classes.cost}>{data.prices['Обычная цена']} руб.</span>}
+                            <span className={classes.isHere}><img src={isHere} alt="isHere"/> В наличии</span>
+                            <span className={classes.saled}><img src={saled} alt="saled"/> Узнать о снижении цены</span>
+                            <hr className={classes.hr}/>
+                            <span className={classes.addG}><img src={addG}
+                                                                alt="addG"/> Купить дополнительную гарантию</span>
+                            {
+                                count !== 0 ? <EditButton count={count} info={data} handleChangeMinus={minus}
+                                                          handleChangePlus={plus}/> :
+                                    <AddButton word={"Добавить в корзину"} info={data} handleChange={firstValue}/>
+                            }
+                            <span className={classes.wantCheaper}><img src={want} alt="want"/>Хочу дешевле</span>
+                            <span className={classes.help}><img src={help} alt="help"/>Нужна консультация</span>
+                            <span className={classes.delivery}><img src={delivery} alt="delivery"/>Стандартная доставка</span>
+                            <span className={classes.deliveryNew}>
                                     <span className={classes.first}>
                                         <img src={deliveryNew} alt="delivery"/>
                                         <span className={classes.holder}>
@@ -196,8 +250,8 @@ export default function Product(props){
                                         <span className={classes.two}>10 сентября - бесплатно</span>
                                     </span>
                                 </span>
-                            </Col>
-                        </Row>
+                        </Col>
+                    </Row>
                 </div>
                 <div className={classes.tab}>
                     <Tabs
@@ -237,7 +291,7 @@ export default function Product(props){
                     </div>
                 </div>
                 <div>
-                    {props.recommend.length > 0 ? <Recomendations data={props.recommend}/>: null}
+                    {props.recommend.length > 0 ? <Recomendations data={props.recommend}/> : null}
                 </div>
             </div>
         )

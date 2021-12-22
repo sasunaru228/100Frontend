@@ -1,5 +1,14 @@
 import classes from "./SpecificarionsTab.module.css";
+import styled from "styled-components";
 
+const Value = styled.div`
+  ul {
+    flex-direction: column;
+    &:after{
+      display: none;
+    }
+  }
+`
 
 export default function SpecificarionsTab(props){
     let result = {}
@@ -32,7 +41,8 @@ export default function SpecificarionsTab(props){
                                     return(
                                         <div className={classes.itemBody_box} key={id}>
                                             <span className={classes.key}>{step.name}</span>
-                                            {step.value ? <span className={classes.value}>{step.value}</span> : <span className={classes.value}>не завезли</span>}
+                                            <Value className={classes.value} dangerouslySetInnerHTML={{ __html: step.value}}/>
+                                            {/*{step.value ?  : <span className={classes.value}>не завезли</span>}*/}
                                         </div>
                                     )
                                 })}
