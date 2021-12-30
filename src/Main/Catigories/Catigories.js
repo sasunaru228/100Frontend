@@ -30,7 +30,8 @@ const Item = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(196, 196, 196, 0.25);
+  background: #FFFFFF;
+  box-shadow: 0 1px 2px rgba(187, 189, 198, 0.47);
   border-radius: 2px;
   >p{
     margin-top: 14px;

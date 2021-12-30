@@ -27,6 +27,7 @@ export default function Basket(props){
             }
     }, [])
 
+
     function getResult(){
         let result = {
             "products" : [
@@ -64,7 +65,6 @@ export default function Basket(props){
 
 
 
-    console.log(data)
     const [auxInfo, setAuxInfo] = useState({})
     useEffect(() => {
         if (data.length > 0){
@@ -106,6 +106,14 @@ export default function Basket(props){
             })
         }
     }, [data])
+    const handleDelete = (id, indexItem) => {
+        console.log(id)
+        localStorage.removeItem(indexItem)
+        let copy = data
+        copy.splice(id, 1)
+        setData([...copy])
+    }
+
 
     return(
         <div className={classes.basket}>
@@ -132,19 +140,16 @@ export default function Basket(props){
                 <div className={classes.main}>
 
                     <div className={classes.basketInfo}>
-                        <form>
-                            <input type="checkbox"/>
-                            <button type="button" className={classes.selectAll}>Выбрать всё</button>
-                            <button type="submit" className={classes.deleteAll}>Удалить выбранные</button>
-                        </form>
-                        <hr/>
+                        <hr style={{marginTop: 0}} />
                         {
                             data.map((item, index) => {
-                                console.log(item.data.prices)
                                 return (
                                     <div className={classes.bItem} key={index}>
                                         <div className={classes.bItem__into}>
-                                            <input type="checkbox"/>
+                                            <span className={classes.delete} onClick={() => handleDelete(index, item.data.product_id)}>
+                                                <span></span>
+                                                <span></span>
+                                            </span>
                                             <NavLink to={'/product/' + item.id}>
                                                 <img src={item.data.imgs[0]} alt="bItem"/>
                                             </NavLink>
@@ -165,7 +170,7 @@ export default function Basket(props){
                                                 }
 
                                                 {
-                                                    item.data.prices['Скидка'] ? <span className={classes.saleP}>- {item.data.prices['Обычная цена'] - item.data.prices['Скидка']} руб.</span> : null
+                                                    item.data.prices['Скидка'] ? <span className={classes.saleP}>- {Math.round((item.data.prices['Обычная цена'] - item.data.prices['Скидка'])* 100) / 100} руб.</span> : null
                                                 }
 
                                             </div>

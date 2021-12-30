@@ -19,7 +19,8 @@
 }
 
 #clicker .greyBox {
-  background: #C4C4C4;
+  cursor: pointer;
+  background: #FA520F;
   border-radius: 6px;
   width: 100%;
   text-align: center;
@@ -44,7 +45,7 @@
 }
 #clicker .holder .first {
   height: 50px;
-  background: #C4C4C4;
+  background: #FA520F;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
@@ -86,6 +87,7 @@
   justify-content: center;
   background: #C4C4C4;
   border-radius: 6px;
+  cursor: pointer;
 }
 #clicker .holder .main .count {
   font-family: Open Sans, sans-serif;
@@ -96,6 +98,12 @@
   line-height: 19px;
   color: #000000;
   text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 #clicker .holder .last {
   width: 50px;
@@ -105,6 +113,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 #clicker .holder .last img {
   width: 22px;
@@ -115,9 +124,10 @@
   height: 33px;
 }
 .sasuNaru .greyBox {
+  cursor: pointer;
   width: 101px;
   height: 33px;
-  background: #C4C4C4;
+  background: #FA520F;
   border-radius: 5px;
   border: none;
   font-family: Ubuntu, sans-serif;
@@ -177,6 +187,22 @@
 }
 .sasuNaru .holder .last {
   display: none;
+}
+
+.modal-dialog {
+  max-width: 70%;
+  margin-top: 15vh;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.ModalItem {
+  width: 100%;
+}
+.ModalItem > img {
+  width: 100%;
+  height: 70vh;
+  object-fit: scale-down;
 }
 
 /*# sourceMappingURL=SUKA.css.map */

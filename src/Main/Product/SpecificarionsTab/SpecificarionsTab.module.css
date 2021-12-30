@@ -1,12 +1,13 @@
 .holder {
   margin-top: 40px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
 }
 .holder .item {
-  width: 692px;
   margin-bottom: 25px;
+  width: 692px;
 }
 .holder .item .itemHeader {
   width: 100%;

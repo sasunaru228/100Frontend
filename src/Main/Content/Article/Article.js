@@ -14,10 +14,12 @@ const MainArticle = styled.div`
   }
   .big{
     position: relative;
+    border-radius: 4px;
     img{
       width: 705px;
       height: 461px;
       object-fit: cover;
+      border-radius: 4px;
     }
     p{
       z-index: 2;
@@ -48,13 +50,12 @@ const MainArticle = styled.div`
       display: flex;
       flex-direction: row;
       div {
-        background: #e7e7e7;
+        box-shadow: 0px 1px 2px rgba(187, 189, 198, 0.47);
+        border-radius: 4px;
         width: 335px;
         margin-left: 30px;
         display: flex;
         flex-direction: column;
-        border-radius: 5px;
-
         .title {
           margin: 26px 17px 0 18px;
           font-family: Ubuntu, sans-serif;

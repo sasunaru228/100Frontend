@@ -9,7 +9,8 @@
 .itemBody {
   width: 219px;
   position: relative;
-  background: rgba(196, 196, 196, 0.25);
+  background: #FFFFFF;
+  box-shadow: 0 1px 2px rgba(187, 189, 198, 0.47);
   margin-right: 21px;
   height: auto;
   display: flex;
@@ -17,9 +18,16 @@
   text-decoration: none;
   color: black;
 }
-.itemBody > img {
-  width: 100%;
+.itemBody .img {
   height: 230px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.itemBody .img > img {
+  max-width: 217px;
+  max-height: 230px;
   object-fit: scale-down;
 }
 .itemBody .like {

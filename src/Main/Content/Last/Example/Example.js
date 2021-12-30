@@ -6,7 +6,6 @@ import {NavLink} from "react-router-dom";
 import AddButton from "../../../Product/AddButton/AddButton";
 import React, {useEffect, useState} from "react";
 import EditButton from "../../../Product/EditButton/EditButton";
-import data from "bootstrap/js/src/dom/data";
 
 
 export default function Example(props){
@@ -19,7 +18,7 @@ export default function Example(props){
             if (localStorage.getItem(item.product_id)){
                 setCount(prevState => ({
                     ...prevState,
-                    [item.product_id]: localStorage.getItem(item.product_id)
+                    [item.product_id]: Number.parseInt(localStorage.getItem(item.product_id))
                 }))
             }
         })
@@ -33,20 +32,23 @@ export default function Example(props){
         localStorage.setItem(id, 1)
     }
     const minus = (id) => {
-
         if (count[id] !== 1){
+            console.log(count)
+            console.log('WHY???')
             setCount((prevState) => ({
                 ...prevState,
                 [id] : prevState[id] - 1
             }))
             localStorage.setItem(id, localStorage.getItem(id) - 1)
         }
-        else {
+        else if (count[id] === 1) {
             setCount(prevState => ({
                 ...prevState,
                 [id] : undefined
             }))
             localStorage.removeItem(id)
+            console.log(count)
+
         }
     }
     const plus = (id) => {
@@ -65,7 +67,9 @@ export default function Example(props){
                 props.data.map((main, id) => {
                         return (
                             <NavLink to={{pathname: '/product/' + main.product_id}} className={classes.itemBody} key={id}>
-                                <img src={main.img} alt="img"/>
+                                <div className={classes.img}>
+                                    <img src={main.img} alt="img"/>
+                                </div>
                                 <span className={classes.like}>
                                     <img src={like} alt="like" width="24px" height="24px"/>
                                 </span>

@@ -9,10 +9,13 @@ import EditButton from "./EditButton/EditButton";
 import Price from "./Price/Price";
 import SpecificarionsMain from "./SpecificarionsMain/SpecificarionsMain";
 import SpecificarionsTab from "./SpecificarionsTab/SpecificarionsTab";
+
+
+import Flickity from "react-flickity-component";
 import 'flickity-as-nav-for'
-
-
-import {Row, Col, Tabs, Tab} from "react-bootstrap";
+import 'flickity-fullscreen'
+import styled from "styled-components";
+import {Row, Col, Tabs, Tab, Modal} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import classes from "./Product.module.css";
 import './SUKA.css'
@@ -30,8 +33,7 @@ import help from '../../img/Product/help.svg'
 import delivery from '../../img/Product/delivery.svg'
 import deliveryNew from '../../img/Product/deliveryNew.svg'
 import logo from '../../img/Product/logo.svg'
-import Flickity from "react-flickity-component";
-import styled from "styled-components";
+
 
 
 const ImgMain = styled.div`
@@ -48,13 +50,16 @@ const ImgMain = styled.div`
 const ImgNav = styled.img`
   width: 172px;
   height: 134px;
-  object-fit: fill;
+  object-fit: scale-down;
   margin: 20px 8px 0 8px;
   cursor: pointer;
+  box-shadow: 0 5px 2px rgba(187, 189, 198, 0.47);
+
   &:first-child {
     margin-left: 0;
   }
 `
+
 
 export default function Product(props) {
 
@@ -100,13 +105,41 @@ export default function Product(props) {
         if (count === 10) return
         setCount(parseInt(count) + 1)
     }
+
     // useEffect(() => {
     //      props.setCounter(localStorage.length)
     // }, [])
+    const [modalSettings, setModalSettings] = useState({
+        open: false,
+        img: "",
+        id: ""
+    });
+
 
     if ((data.prices && props.history) !== undefined) {
         return (
             <div className={classes.holder}>
+                <Modal show={modalSettings.open} onHide={() => {setModalSettings({open:false, img: "", id: ""})}}>
+                    <Flickity
+                        className={'carousel carousel-main'}
+                        elementType={'div'}
+                        options={{
+                            prevNextButtons: true,
+                            pageDots: true,
+                            contain: true,
+                            initialIndex: modalSettings.id
+                        }}
+                        disableImagesLoaded={false}
+                        reloadOnUpdate
+                    >
+                        {
+                            data?.imgs?.map((item) =>
+                                <div className="ModalItem">
+                                    <img src={item} alt="" />
+                                </div>)
+                        }
+                    </Flickity>
+                </Modal>
                 <div className={classes.nav}>
                     <span>
                         <NavLink to={'/'}>
@@ -140,7 +173,7 @@ export default function Product(props) {
                 </div>
                 <div className={classes.saleDot}>
                     {
-                        data.prices['Скидка'] ? <span>
+                        data.prices['Скидка'] ? <span className={classes.salePoint}>
                                                     - {100 - Math.round((data.prices['Скидка'] / data.prices['Обычная цена']) * 100)}
                                 <img src={percent} alt="percent"/>
                                                 </span>
@@ -187,8 +220,8 @@ export default function Product(props) {
                                 reloadOnUpdate
                             >
                                 {
-                                    data?.imgs?.map(item => <ImgMain>
-                                        <img src={item} alt=""/>
+                                    data?.imgs?.map((item, idx) => <ImgMain onClick={() => {setModalSettings({open:true, img:item, id: idx})}}>
+                                        <img src={item} alt="" />
                                     </ImgMain>)
                                 }
                             </Flickity>

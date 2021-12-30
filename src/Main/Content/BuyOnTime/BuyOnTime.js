@@ -6,16 +6,24 @@ import {NavLink} from "react-router-dom";
 const SaleItem = styled.div`
   width: 150px;
   height: 287px;
-  background: rgba(196, 196, 196, 0.25);
+  background: #FFFFFF;
+  filter: drop-shadow(0px 1px 2px rgba(187, 189, 198, 0.47));
   display: flex;
   flex-direction: column;
   margin-right: 28px;
   margin-bottom: 24px;
   position: relative;
-  .data{
-    object-fit: cover;
+  .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 150px;
     height: 177px;
+    >img{
+      max-width: 150px;
+      max-height: 177px;
+      object-fit: scale-down;
+    }
   }
   .sale{
     margin-top: 3px;
@@ -124,7 +132,9 @@ function BuyOnTime(props) {
                                                         <span className="like">
                                                             <img src={like} alt="like" width="24" height="24"/>
                                                         </span>
-                                        <img className="data" src={inf.img} alt="sale"/>
+                                        <div className="img">
+                                            <img src={inf.img} alt="sale"/>
+                                        </div>
                                         <span className="sale">{inf.prices['Обычная цена']} руб.</span>
                                         <span className="cost">{inf.prices['Скидка']} руб.</span>
                                         <span className="best">Бестселлер</span>

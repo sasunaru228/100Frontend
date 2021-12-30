@@ -1,3 +1,7 @@
+.modal-dialog {
+  max-width: 80%;
+}
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -38,7 +42,7 @@
   flex-direction: row;
   align-items: center;
 }
-.saleDot span:nth-child(1) {
+.saleDot .salePoint {
   font-family: Ubuntu, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -50,13 +54,14 @@
   padding: 0 4px;
   border-radius: 2px;
 }
-.saleDot span:nth-child(1) img {
+.saleDot .salePoint img {
   margin-left: 4px;
   height: 15px;
   width: 15px;
 }
 .saleDot .bestSell {
-  border: 1px solid #000000;
+  background: #FFFFFF;
+  border: 1px solid #001A34;
   border-radius: 2px;
   font-family: Ubuntu, sans-serif;
   font-style: normal;
@@ -117,7 +122,8 @@
   padding: 0;
 }
 .mainInfo .gallery {
-  background: #C4C4C4;
+  background: #FFFFFF;
+  box-shadow: 0 1px 2px rgba(187, 189, 198, 0.47);
   padding: 24px;
 }
 .mainInfo .price {
